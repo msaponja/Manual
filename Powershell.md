@@ -14,10 +14,10 @@
     Add-Computer	                    # Add a computer to the domain
     Add-Content	                        # Add to the content of the item
     Add-History	                        # Add entries to the session history
-    Add-Member	                        # Add a member to an instance of a PowerShell obje
+    Add-Member	                        # Add a member to an instance of a PowerShell object
     Add-PsSnapIn	                    # Add snap-ins to the console
     Add-Type    	                    # Add a .NET Framework type to a PowerShell session
-    Add-WindowsFea	                    # Install roles, role services, and features
+    Add-WindowsFeature	                # Install roles, role services, and features
     Backup-GPO	                        # Backup group policy objects (GPOs)
     Backup-GPO	                        # Backup group policy objects (GPOs)
     Begin	                            # Function BEGIN block
@@ -40,13 +40,13 @@
     Compress-Archive                    # Create a new archive/zipped file [PS 5+]
     Connect-WSMan	                    # Connect to the WinRM service on a remote computer
     Continue	                        # Skip just this iteration of a loop
-    ConvertFrom-CSV	                    # Convert object properties (in CSV format) into C
+    ConvertFrom-CSV	                    # Convert object properties (in CSV format) into CSV objects
     ConvertFrom-SecureString	        # Convert a secure string into an encrypted standard string
     ConvertFrom-StringData	            # Convert a here-string into a hash table
     Convert-Path	                    # Convert a ps path to a provider path
     ConvertTo-CSV	                    # Convert .NET Framework objects into CSV variable
     ConvertTo-Html	                    # Convert the input into an HTML table
-    ConvertTo-SecureString	            # Convert an encrypted standard string into a secu
+    ConvertTo-SecureString	            # Convert an encrypted standard string into a secure string
     ConvertTo-Xml	                    # Convert the input into XML
     Copy-Item	                        # Copy an item from a namespace location
     Copy-ItemProperty	                # Copy a property along with it's value
