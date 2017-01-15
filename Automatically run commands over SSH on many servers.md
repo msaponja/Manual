@@ -1,4 +1,4 @@
-# Example [[14]]
+# Example [[1]]
 
     tmpdir=${TMPDIR:-/tmp}/pssh.$$
     mkdir -p $tmpdir
@@ -12,4 +12,4 @@
         count=`expr $count - 1`
     done
     echo "Output for hosts are in $tmpdir"
-[14]:<http://unix.stackexchange.com/a/19015>
+[1]:<http://unix.stackexchange.com/a/19015>
