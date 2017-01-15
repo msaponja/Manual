@@ -28,8 +28,8 @@
                       1111XXXX.XXXXXXXX.XXXXXXXX.XXXXXXXX
     
     - n: indicates a bit used for the network ID
-    - H indicates a bit used for the host ID
-    - X indicates a bit without a specified purpose
+    - H: indicates a bit used for the host ID
+    - X: indicates a bit without a specified purpose
   
 ### Reserved ranges [[4]]
 
