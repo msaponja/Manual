@@ -1,4 +1,4 @@
-# Hide Your Tracks [[5]]
+# Hide Your Tracks [[11]]
 
 ### Meterpreter
 
@@ -24,7 +24,7 @@ NOTICE: You will need physical access to the victims system
 
     $ shred -zu root/.bash_history      # The shred command with the -zu switches will overwrite the history with zeros and delete the file.
     
-### The logs[[6]]
+### The logs[[12]]
 
     $ WTMP      # Every log on/off, with login/logout time plus tty and host
     $ UTMP      # Who is online at the moment
@@ -57,6 +57,6 @@ NOTICE: You will need physical access to the victims system
     $ zap.c         # Overwrites utmp, wtmp, lastlog - Don't use! Can be detected!
     NOTICE: Never delete the logs
 
-[5]: <http://null-byte.wonderhowto.com/how-to/hack-like-pro-cover-your-tracks-leave-no-trace-behind-target-system-0148123/>
+[11]: <http://null-byte.wonderhowto.com/how-to/hack-like-pro-cover-your-tracks-leave-no-trace-behind-target-system-0148123/>
 [clearlogs.exe]: <http://ntsecurity.nu/toolbox/clearlogs/>
-[6]: <http://www.ouah.org/cover_your_tracks1.html>
+[12]: <http://www.ouah.org/cover_your_tracks1.html>
