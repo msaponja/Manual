@@ -1,6 +1,6 @@
 # IPv4    
 
-### CLASSFULL IP RANGES [[3]]
+### CLASSFULL IP RANGES [[17]]
 
     Class A
       0.  0.  0.  0 = 00000000.00000000.00000000.00000000
@@ -31,7 +31,7 @@
     - H: indicates a bit used for the host ID
     - X: indicates a bit without a specified purpose
   
-### Reserved ranges [[4]]
+### Reserved ranges [[18]]
 
     0.0.0.0/8       # Used for broadcast messages to the current ("this")
     10.0.0.0/8      # Used for local communications within a private network
@@ -50,11 +50,11 @@
     240.0.0.0/4     # Reserved for future use
     255.255.255.255/32  # Reserved for the "limited broadcast" destination address
     
-### Subnetting [[5]]
+### Subnetting [[19]]
 
 ![class_a_subnets.jpg](https://www.dropbox.com/s/i7k6anrqrew7q8h/class_a_subnets.jpg?dl=0&raw=1)
 
-### Calculating subnet range [[6]]
+### Calculating subnet range [[20]]
 
     Address:   192.168.0.1           11000000.10101000.00000000 .00000001
     Netmask:   255.255.255.0 = 24    11111111.11111111.11111111 .00000000
@@ -66,7 +66,7 @@
     HostMax:   192.168.0.254         11000000.10101000.00000000 .11111110
     Hosts/Net: 254                   (Private Internet)
     
-[3]:<https://en.wikipedia.org/wiki/Classful_network>
-[4]:<https://en.wikipedia.org/wiki/Reserved_IP_addresses>
-[5]:<https://www.tutorialspoint.com/ipv4/ipv4_subnetting.htm>
-[6]:<http://jodies.de/ipcalc?host=192.168.0.1&mask1=24&mask2=>
+[17]:<https://en.wikipedia.org/wiki/Classful_network>
+[18]:<https://en.wikipedia.org/wiki/Reserved_IP_addresses>
+[19]:<https://www.tutorialspoint.com/ipv4/ipv4_subnetting.htm>
+[20]:<http://jodies.de/ipcalc?host=192.168.0.1&mask1=24&mask2=>
