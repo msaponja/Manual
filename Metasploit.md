@@ -1,4 +1,4 @@
-# Metasploit [[1]]
+# Metasploit [[36]]
 
 ### Meterpreter Payloads
 
@@ -36,4 +36,4 @@
     use exploit/multi/http/jboss_maindeployer      # Metasploit JBOSS deploy
     use exploit/windows/mssql/mssql_payload        # Metasploit MSSQL payload
 
-[1]: <https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#metasploit>
+[36]: <https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#metasploit>
