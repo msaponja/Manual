@@ -1,4 +1,4 @@
-# PsExec[[10]]
+# PsExec[[41]]
 PsExec is a light-weight telnet-replacement that lets you execute processes on other systems, complete with full interactivity for console applications, without having to manually install client software.
 
     # The following command launches an interactive command prompt on \\marklap:
@@ -25,4 +25,4 @@ PsExec is a light-weight telnet-replacement that lets you execute processes on o
     
     psexec -l -d "c:\program files\internet explorer\iexplore.exe"    
 
-[10]: <https://technet.microsoft.com/en-us/sysinternals/pxexec.aspx>
+[41]: <https://technet.microsoft.com/en-us/sysinternals/pxexec.aspx>
