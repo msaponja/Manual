@@ -1,4 +1,4 @@
-# Linux system info [[2]]
+# Linux system info [[34]]
 
 Most common commands used to check information and configuration details about various hardware peripherals and devices.
 
@@ -19,4 +19,4 @@ Most common commands used to check information and configuration details about v
     $ /proc files            # Virtual files in /proc directory contain information about hardware and configurations
     $ hdparm                 # Gets information about sata devices
     
-[2]: <http://www.binarytides.com/linux-commands-hardware-info/>
+[34]: <http://www.binarytides.com/linux-commands-hardware-info/>
