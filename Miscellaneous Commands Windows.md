@@ -1,4 +1,4 @@
-# Miscellaneous commands Windows[[9]]
+# Miscellaneous commands Windows[[37]]
 
 ### Lock Workstation
 
@@ -29,4 +29,4 @@
 
     reg add HKCU\Software\Policies\t1icrosoft\Windows\System /v DisableCHD /tREG DWORD /d 0 /f
 
-[9]: <https://www.google.hr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwjhooiG2rrRAhVqJpoKHV7rBgAQFgggMAE&url=https%3A%2F%2Fwatchthestack.files.wordpress.com%2F2015%2F03%2Frtfm-red-team-field-manual.pdf&usg=AFQjCNGEsophTnPPNguco9UBIh0p92db_A&sig2=qjLZXS2m135kgA3_o3kVLw>
+[37]: <https://watchthestack.files.wordpress.com/2015/03/rtfm-red-team-field-manual.pdf>
