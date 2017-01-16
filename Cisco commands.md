@@ -1,6 +1,6 @@
 # Cisco commands
 
-### Exec commands [[10]]
+### Exec commands [[4]]
 
     <1-99>           # Session number to resume
     connect          # Open a terminal connection
@@ -29,7 +29,7 @@
     where            # List active telnet connections
     x3               # Set X.3 parameters on PAD
     
-### Common commands [[11]]
+### Common commands [[5]]
 
     ?                                                   # Help
     show running-configuration                          # Shows the router, switch, or firewall's current configuration
@@ -42,7 +42,7 @@
     show version                                        # Gives you the router's configuration register
     debug                                               # It provides detailed debugging output on a certain application, protocol, or service
     
-[10]: <http://www.cisco.com/c/en/us/td/docs/ios/12_2/configfun/configuration/guide/ffun_c/fcf001.html>
-[11]:<http://www.techrepublic.com/blog/data-center/10-commands-you-should-master-when-working-with-the-cisco-ios-104071/>
+[4]: <http://www.cisco.com/c/en/us/td/docs/ios/12_2/configfun/configuration/guide/ffun_c/fcf001.html>
+[5]:<http://www.techrepublic.com/blog/data-center/10-commands-you-should-master-when-working-with-the-cisco-ios-104071/>
 
 
