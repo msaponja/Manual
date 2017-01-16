@@ -1,4 +1,4 @@
-# Linux Misc Commands [[4]]
+# Linux Misc Commands [[25]]
 
 Search commands
 
@@ -28,4 +28,4 @@ Counting commands
     $ grep -v -e "^$" filename | wc -l      # To count number of none empty lines in a file
     $ find . -name "*.p?" | xargs grep -v -e "^$" - | wc -l     # To count number of source code lines (perl)
     
-[4]: <http://www.penguintutor.com/linux/misc-quickreference>
+[25]: <http://www.penguintutor.com/linux/misc-quickreference>
