@@ -1,4 +1,4 @@
-# Kali Linux Commands[[20]]
+# Kali Linux Commands[[24]]
 
     $ apropos     #   Change access permissions
     $ chown 	  #   Change file owner and group
@@ -223,4 +223,4 @@
     $ xargs 	  #  Execute utility, passing constructed argument lists
     $ xdg-open 	  #  Open a file or URL in the user’s preferred application
     $ yes 	      #  Print a string until interrupted
-[20]: <https://techlog360.com/a-z-kali-linux-commands/>
+[24]: <https://techlog360.com/a-z-kali-linux-commands/>
