@@ -1,17 +1,17 @@
 # Linux scripting
 
-### Understanding bash scripting[[7]]
+### Understanding bash scripting[[27]]
 
-### Ping sweep without NMAP [[8]]
+### Ping sweep without NMAP [[28]]
 
     $ for i in `seq 1 255`; do ping -c 1 10.10.10.$i | tr \\n ' ' | awk '/1 received/ {print $2}'; done
     $ for i in {1..254}; do ping -c 1 -W 1 10.1.1.$i | grep 'from'; done
 
-### Fork bomb[[9]]
+### Fork bomb[[29]]
 
     $ :(){ :|:& };:     # forkbomb(){ forkbomb | forkbomb & }; forkbomb
     
-### Monitor DNS[[10]]
+### Monitor DNS[[30]]
 -It takes the IP address or hostname of the DNS server to check. Checks the records defined in the array.
 
     //Define defaults
@@ -41,7 +41,7 @@
     }
     ?>
 
-### Monitoring NTP[[11]]
+### Monitoring NTP[[31]]
 
     #!/usr/local/bin/bash
     #ntptest
@@ -57,7 +57,7 @@
     
     NOTICE: Works with *nix Zabbix Server
 
-### Special shell variables to be aware [[12]]
+### Special shell variables to be aware [[32]]
 
     $ $*    # Passes in all of the arguments. This is useful for FOR loops
     $ $?    # Gets the error code (exit()) status) of the last program executed
@@ -65,7 +65,7 @@
     $ $!    # Gets the PID of the last background process
     $ $EUID # Gets the effective UID number of the scripts execution
 
-### Linux Iptables Firewall Shell Script For Standalone Server[[13]]
+### Linux Iptables Firewall Shell Script For Standalone Server[[33]]
 
     #!/bin/bash
     # A Linux Shell Script with common rules for IPTABLES Firewall.
@@ -153,10 +153,10 @@
     $IPT -A FORWARD -j LOG
     $IPT -A INPUT -j DROP
     exit 0
-[7]: <https://linuxconfig.org/bash-scripting-tutorial>
-[8]: <http://www.commandlinefu.com/commands/view/3144/ping-sweep-without-nmap>
-[9]: <https://linuxconfig.org/how-to-crash-your-linux-system-with-fork-bomb>
-[10]: <https://www.zabbix.com/forum/showpost.php?p=31561&postcount=2>
-[11]: <https://www.zabbix.com/forum/showpost.php?p=31549&postcount=1>
-[12]: <http://wiki.jaxhax.org/images/9/94/Shell_Scripting_Crash_Course.pdf>
-[13]: <https://bash.cyberciti.biz/firewall/linux-iptables-firewall-shell-script-for-standalone-server/>
+[27]: <https://linuxconfig.org/bash-scripting-tutorial>
+[28]: <http://www.commandlinefu.com/commands/view/3144/ping-sweep-without-nmap>
+[29]: <https://linuxconfig.org/how-to-crash-your-linux-system-with-fork-bomb>
+[30]: <https://www.zabbix.com/forum/showpost.php?p=31561&postcount=2>
+[31]: <https://www.zabbix.com/forum/showpost.php?p=31549&postcount=1>
+[32]: <http://wiki.jaxhax.org/images/9/94/Shell_Scripting_Crash_Course.pdf>
+[33]: <https://bash.cyberciti.biz/firewall/linux-iptables-firewall-shell-script-for-standalone-server/>
