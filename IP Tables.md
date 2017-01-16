@@ -1,4 +1,4 @@
-# IP Tables[[15]]
+# IP Tables[[13]]
 
 ### Create a set named geoset
 
@@ -31,7 +31,7 @@
 
     # sudo iptables -A INPUT -m set --set !geoblock src -j DROP
     
-### Connection States[[16]]
+### Connection States[[14]]
 
     #iptables -A INPUT -p tcp --dport ssh -s 10.10.10.10 -m state --state NEW,ESTABLISHED -j ACCEPT
     #iptables -A OUTPUT -p tcp --sport 22 -d 10.10.10.10 -m state --state ESTABLISHED -j ACCEPT
@@ -42,13 +42,13 @@
     iptables --policy OUTPUT ACCEPT
     iptables --policy FORWARD ACCEPT
    
-### Red Hat Linux firewall[[17]] 
+### Red Hat Linux firewall[[15]] 
 
-### IPtables Packet Flow Diagram[[18]]
+### IPtables Packet Flow Diagram[[16]]
 
 ![Iptables.gif](https://www.dropbox.com/s/5gwp8tk1q9hhnr4/Iptables.gif?dl=0&raw=1)
 
-[15]: <http://www.dghost.com/techno/internet/banning-an-entire-country-with-iptablesipset>
-[16]: <http://www.howtogeek.com/177621/the-beginners-guide-to-iptables-the-linux-firewall/>
-[17]: <http://oceanpark.com/notes/firewall_example.html>
-[18]: <http://www.linuxhomenetworking.com/wiki/index.php/Quick_HOWTO_:_Ch14_:_Linux_Firewalls_Using_iptables#.WG_4SNRACdJ>
+[13]: <http://www.dghost.com/techno/internet/banning-an-entire-country-with-iptablesipset>
+[14]: <http://www.howtogeek.com/177621/the-beginners-guide-to-iptables-the-linux-firewall/>
+[15]: <http://oceanpark.com/notes/firewall_example.html>
+[16]: <http://www.linuxhomenetworking.com/wiki/index.php/Quick_HOWTO_:_Ch14_:_Linux_Firewalls_Using_iptables#.WG_4SNRACdJ>
