@@ -1,4 +1,4 @@
-# Linux network commands [[1]]
+# Linux network commands [[26]]
 
 General networking concepts that will help you in troubleshooting networks on Linux.
 
@@ -29,4 +29,4 @@ General networking concepts that will help you in troubleshooting networks on Li
     $ echo "1" /proc/sys/net/ipv4/ip_forward     # Turn on IP Forwarding
     $ echo "nameserver x.x.x.x" /etc/resolv.conf # Add DNS Server
 
-[1]: <http://linux-training.be/linuxnet.pdf>
+[26]: <http://linux-training.be/linuxnet.pdf>
