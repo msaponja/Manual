@@ -1,4 +1,4 @@
-# Manipulating files [[3]]
+# Manipulating files [[35]]
 
 Most frequently used Linux Commands for manipulating files.
 
@@ -7,4 +7,4 @@ Most frequently used Linux Commands for manipulating files.
     $ mv file1 file2        # If file2 does not exist, then file1 is renamed file2. If file2 exists, its contents are replaced with the contents of file1
     $ rm file1 file2        # Deletes file1 and file2
     $ mkdir directory       # Create directories
-[3]: <http://linuxcommand.org/lts0050.php>
+[35]: <http://linuxcommand.org/lts0050.php>
