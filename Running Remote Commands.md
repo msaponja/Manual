@@ -1,4 +1,4 @@
-# Running remote commands[[6]]
+# Running remote commands[[42]]
 Many Windows PowerShell cmdlets have the ComputerName parameter that enables you to collect data and change settings on one or more remote computers. They use a variety of communication technologies and many work on all Windows operating systems that Windows PowerShell supports without any special configuration.
 
 Typically, cmdlets that support remoting without special configuration have the ComputerName parameter and do not have the Session parameter. To find these cmdlets in your session, type:
@@ -42,6 +42,6 @@ Now you can use the data in the $h variable in subsequent commands, such as the 
 
     Invoke-Command -Session $s {$h | where {$_.installedby -ne "NTAUTHORITY\SYSTEM"}}
     
-[6]: <https://msdn.microsoft.com/en-us/powershell/scripting/core-powershell/running-remote-commands>
+[42]: <https://msdn.microsoft.com/en-us/powershell/scripting/core-powershell/running-remote-commands>
     
     
