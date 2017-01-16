@@ -1,4 +1,4 @@
-# Password Cracking [[3]]
+# Password Cracking [[39]]
 
 ## John The Ripper - JTR
 
@@ -15,4 +15,4 @@
 
 	john --format=descrypt hash --show
 	
-[3]: <https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#john-the-ripper---jtr>
+[39]: <https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#john-the-ripper---jtr>
