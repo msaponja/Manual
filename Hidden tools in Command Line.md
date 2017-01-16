@@ -1,4 +1,4 @@
-# Hidden tools in Command Line[[8]]
+# Hidden tools in Command Line[[10]]
 NOTICE: You need to run CMD with administrator privileges
 
 ### System file checker
@@ -31,6 +31,6 @@ NOTICE: You need to run CMD with administrator privileges
     
 ![g91lech9vvrplpbh0qnd.png](https://www.dropbox.com/s/mfgbhgugjic88vq/g91lech9vvrplpbh0qnd.png?dl=0&raw=1)
     
-[8]: <http://lifehacker.com/the-best-tools-hidden-in-windows-command-line-1553193077>
+[10]: <http://lifehacker.com/the-best-tools-hidden-in-windows-command-line-1553193077>
     
     
