@@ -1,4 +1,4 @@
-# Packet Capturing[[14]]
+# Packet Capturing[[38]]
 
     tcpdump -i eth0                     # Capture Packets From Specific Interface
     tcpdump -c 5 -i eth0                # Capture Only N Number of Packets
@@ -13,7 +13,7 @@
     tcpdump -i eth0 src 192.168.0.2     # Capture Packets from source IP
     tcpdump -i eth0 dst 50.116.66.139   # Capture Packets from destination IP
     
-[14]: <http://www.tecmint.com/12-tcpdump-commands-a-network-sniffer-tool/>
+[38]: <http://www.tecmint.com/12-tcpdump-commands-a-network-sniffer-tool/>
 
 
 
