@@ -1,4 +1,4 @@
-# Useful Run Commands [[3]]		
+# Useful Run Commands [[48]]		
     		
     access.cpl					        # Accessibility Controls
     accwiz					            # Accessibility Wizard
@@ -156,6 +156,6 @@
     winver					            # Windows Version (to show which version of windows)
     tourstart				        	# Windows XP Tour Wizard
     write				            	# Wordpad
-[3]:<http://mypchell.com/guides/34-guides/69-156-useful-run-commands>
+[48]:<http://mypchell.com/guides/34-guides/69-156-useful-run-commands>
     		
     		
