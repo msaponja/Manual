@@ -1,4 +1,4 @@
-# Systeminfo[[4]]
+# Systeminfo[[54]]
 
 ### Syntax
 
@@ -33,4 +33,4 @@
     /z          # Specifies to include the numeric equivalent for the registry type in search results
     
 
-[4]:<https://technet.microsoft.com/en-us/library/cc771190(v=ws.11).aspx>
+[54]:<https://technet.microsoft.com/en-us/library/cc771190(v=ws.11).aspx>
