@@ -1,10 +1,10 @@
 # SNMP
 
-### Concept [[12]]
+### Concept [[43]]
 
 ![snmp.png](https://www.dropbox.com/s/srwfkxgbqyep6yo/snmp.png?dl=0&raw=1)
 
-### Command Examples [[13]]
+### Command Examples [[44]]
 This command returns an administratively assigned name for this managed node.
 
     % snmpget -mALL -v1 -cpublic snmp_agent_Ip_address sysName.0
@@ -18,8 +18,8 @@ The snmpbulkwalk command uses the GETBULK SNMP protocol feature to query for an 
 
     
     
-[12]: <http://www.cert.hr/sites/default/files/NCERT-PUBDOC-2010-09-313.pdfl>
-[13]: <https://docs.oracle.com/cd/E19201-01/820-6413-13/SNMP_commands_reference_appendix.html>
+[43]: <http://www.cert.hr/sites/default/files/NCERT-PUBDOC-2010-09-313.pdf>
+[44]: <https://docs.oracle.com/cd/E19201-01/820-6413-13/SNMP_commands_reference_appendix.html>
 
 
 
