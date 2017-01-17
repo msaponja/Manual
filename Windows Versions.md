@@ -1,4 +1,4 @@
-# Windows Versions [[1]]
+# Windows Versions [[55]]
 
        NT 3.1   # Windows NT 3.1 (All)
        NT 3.2   # Windows NT 3.5 (All)
@@ -13,7 +13,7 @@
        NT 6.3   # Windows 8.1 (Pro, Enterprise), Windows Server 2012 R2 (Foundation, Essentials, Standard, Datacenter)
        NT 10.0  # Windows 10 (Home, Pro, Pro Education, Enterprise, Enterprise LTSB, Education, Mobile, Mobile Enterprise, IoT Core, IoT Enterprise, IoT Mobile Enterprise), Windows Server 2016 (Essentials, Standard, Datacenter)
 
-[1]: <https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions>
+[55]: <https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions>
        
        
        
