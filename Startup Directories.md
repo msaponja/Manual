@@ -1,4 +1,4 @@
-# Startup Directories [[2]]
+# Startup Directories [[46]]
 
 ### NT 6.1
 
@@ -12,7 +12,7 @@
     
     Shortcut: Run -> shell:common startup
     
-       
+[46]: https://watchthestack.files.wordpress.com/2015/03/rtfm-red-team-field-manual.pdf
        
        
 
