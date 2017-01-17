@@ -1,4 +1,4 @@
-# Windows registry[[14]]    
+# Windows registry[[56]]    
 
 ### Structure of the Windows Registry (hives)
 
@@ -55,4 +55,4 @@ Firefox has limited footprints regarding Registry activity. Firefox stores  web 
      C:\Documents and Settings\User Profile\Application Data\Mozilla\Firefox\Profiles\x.default\   
     
   
-[14]:<http://www.forensicfocus.com/a-forensic-analysis-of-the-windows-registry>
+[56]:<http://www.forensicfocus.com/a-forensic-analysis-of-the-windows-registry>
