@@ -1,4 +1,4 @@
-# Windows network commands[[7]]
+# Windows network commands[[53]]
 
     $ Arp                       # Display or manipulate the ARP information on a network device or computer.
     $ Finger                    # The finger command available in Unix and Linux variants allows a user to find sometimes personal information about a user. 
@@ -17,6 +17,6 @@
 
 
     
-[7]: <http://www.computerhope.com/issues/ch000444.htm>
+[53]: <http://www.computerhope.com/issues/ch000444.htm>
     
     
