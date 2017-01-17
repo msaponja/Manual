@@ -1,4 +1,4 @@
-# Using the PHP pfSense Shells [[21]]
+# Using the PHP pfSense Shells [[49]]
 Using the PHP pfSense shell allows configuration of the config.xml file directly without needing to use the webConfigurator.
 
 ### Options
@@ -29,5 +29,5 @@ Using the PHP pfSense shell allows configuration of the config.xml file directly
 
 	
 
-[21]:<https://doc.pfsense.org/index.php/Using_the_PHP_pfSense_Shell>
+[49]:<https://doc.pfsense.org/index.php/Using_the_PHP_pfSense_Shell>
 
