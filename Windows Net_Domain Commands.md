@@ -1,4 +1,4 @@
-# Windows Net/Domain Commands[[5]]
+# Windows Net/Domain Commands[[52]]
 
 ### Net user - Syntax
 
@@ -31,6 +31,6 @@
     net group exec                                      # This example displays users in the Exec group
     net group exec /comment:"The executive staff"       # This example adds a comment to the Exec group record
 
-[5]: <https://technet.microsoft.com/en-us/library/cc754051(v=ws.11).aspx>
+[52]: <https://technet.microsoft.com/en-us/library/cc754051(v=ws.11).aspx>
     
     
