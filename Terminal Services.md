@@ -1,4 +1,4 @@
-# Terminal Services[[11]]
+# Terminal Services[[47]]
 Terminal Services provides the ability to host multiple, simultaneous client sessions on Microsoft Windows Server 2003.
 
 ### Terminal Services Arhitecture
@@ -21,4 +21,4 @@ Terminal Services provides the ability to host multiple, simultaneous client ses
     Server\WinStations\RDP-TCP" /v UserAuthentication /t REG_DWORD /d "0" /f
     netsh firewall set service type = remotedesktop mode = enable
 
-[11]: <https://technet.microsoft.com/en-us/library/cc755399(v=ws.10).aspx>
+[47]: <https://technet.microsoft.com/en-us/library/cc755399(v=ws.10).aspx>
