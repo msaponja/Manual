@@ -1,4 +1,4 @@
-# WMIC[[12]]
+# WMIC[[51]]
 WMIC extends WMI for operation from several command-line interfaces and through batch scripts. Before WMIC, you used WMI-based applications (such as SMS), the WMI Scripting API, or tools such as CIM Studio to manage WMI-enabled computers. Without a firm grasp on a programming language such as C++ or a scripting language such as VBScript and a basic understanding of the WMI namespace, do-it-yourself systems management with WMI was difficult. WMIC changes this situation by giving you a powerful, user-friendly interface to the WMI namespace.
 
 ### Listing 1: Code to Display
@@ -46,4 +46,4 @@ wmic /output:e:\se_class.htm
      wmic cpu get maxclockspeed
        /translate:basicxml
       /format:rawxml.xsl
-[12]: <https://msdn.microsoft.com/en-us/library/bb742610.aspx>
+[51]: <https://msdn.microsoft.com/en-us/library/bb742610.aspx>
