@@ -4,7 +4,7 @@
 2. ArrOway, Penetration Testing Tools Cheat Sheet, dostupno od 16.01.2017. na https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#brute-forcing-services
 3. redhat, Using the chkconfig Utility, dostupno od 16.01.2017. na https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/s2-services-chkconfig.html
 4. Cisco, Using the Command-Line Interface, dostupno od 16.01.2017. na http://www.cisco.com/c/en/us/td/docs/ios/12_2/configfun/configuration/guide/ffun_c/fcf001.html
-5. Davis, 10 commands you should master when working with the Cisco IOS, dostupno od 16.01.2017. na http://www.techrepublic.com/blog/data-center/10-commands-you-should-master-when-working-with-the-cisco-ios-104071/
+5. Davis, 10 commands you should master when working with the Cisco IOS, dostupno od 16.01.2017. na http://tools.kali.org/information-gathering/dnsrecon
 6. Stretch J., Common ports, dostupno od 16.01.2017. na http://packetlife.net/media/library/23/common_ports.pdf
 7. Shrestha N., 12 Tcpdump Commands – A Network Sniffer Tool, dostupno od 16.01.2017. na http://www.tecmint.com/12-tcpdump-commands-a-network-sniffer-tool/
 8. NMAP, Nmap Network Scanning, dostupno od 16.01.2017. na https://nmap.org/book/output-formats-grepable-output.html
