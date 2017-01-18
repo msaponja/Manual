@@ -17,7 +17,7 @@ Scan a domain (-d example.com), use a dictionary to brute force hostnames (-D /u
     Host: 24.172.4.19 ()    Status: Down
     # Nmap done at [time] -- 5 IP addresses (1 host up) scanned in 4.25 seconds
 
-[7]: <http://www.tecmint.com/12-tcpdump-commands-a-network-sniffer-tool/>
+[7]: <http://tools.kali.org/information-gathering/dnsrecon>
 [8]: <https://nmap.org/book/output-formats-grepable-output.html>
 
 
