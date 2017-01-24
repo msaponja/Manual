@@ -4,7 +4,7 @@ Manual
 Table of contents
 -----------------
 
- ** Linux **
+ **Linux**
   
 - [Linux Network Commands]
 - [Linux System Info]
@@ -18,27 +18,27 @@ Table of contents
 - [Kali Linux Commands]
 - [Solaris]
   
-** Windows **
+**Windows**
 
--	[Windows Versions]
-- [Startup Directories]
--	[Useful Run Commands]
-- [Windows System Info Commands]
-- [Windows Net_Domain Commands]
+- 	[Windows Versions]
+- 	[Startup Directories]
+- 	[Useful Run Commands]
+- 	[Windows System Info Commands]
+- 	[Windows Net_Domain Commands]
 -	[Running Remote Commands]
-- [Windows Network Commands]
-- [Hidden tools in Command Line]
-- [Miscellaneous Commands Windows]
-- [PsExec]
-- [Terminal Services]
-- [WMIC]
-- [Powershell]
--	[Windows Registry]
+- 	[Windows Network Commands]
+- 	[Hidden tools in Command Line]
+- 	[Miscellaneous Commands Windows]
+- 	[PsExec]
+- 	[Terminal Services]
+- 	[WMIC]
+- 	[Powershell]
+- 	[Windows Registry]
 
-** Networking **
+**Networking**
 
--	[Common ports]
--	[IPv4]
+- 	[Common ports]
+- 	[IPv4]
 -	[IPv6]
 -	[Cisco commands]
 -	[SNMP]
@@ -46,23 +46,23 @@ Table of contents
 -	[DNS]
 -	[VPN]
 
-** PenTesting **
+**PenTesting**
 
 -	[Brute Forcing Services]
 -	[Exploit Research]
 -	[Metasploit]
 -	[Password Cracking]
 
-** Slike/Tablice **
+**Slike/Tablice**
 
 -	[Figure: Driver.csv]
 -	[Figure: IPtables Packet Flow Diagram]
 -	[Figure: Subnetting]
-- [Figure: SNMP Concept]
-- [Figure: Terminal Services Arhitecture]
+- 	[Figure: SNMP Concept]
+- 	[Figure: Terminal Services Arhitecture]
 -	[Table: Common ports]
 
-** Literatura **
+**Literatura**
 
 -	[Literatura]
 
