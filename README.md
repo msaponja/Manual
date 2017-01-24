@@ -20,20 +20,20 @@ Table of contents
   
 **Windows**
 
-- 	[Windows Versions]
-- 	[Startup Directories]
-- 	[Useful Run Commands]
-- 	[Windows System Info Commands]
-- 	[Windows Net_Domain Commands]
--	[Running Remote Commands]
-- 	[Windows Network Commands]
-- 	[Hidden tools in Command Line]
-- 	[Miscellaneous Commands Windows]
-- 	[PsExec]
-- 	[Terminal Services]
-- 	[WMIC]
-- 	[Powershell]
-- 	[Windows Registry]
+- 	[Windows Versions](#windows-versions)
+- 	[Startup Directories](#startup-directories)
+- 	[Useful Run Commands](#useful-run-commands)
+- 	[Windows System Info Commands](#windows-system-info-commands)
+- 	[Windows Net_Domain Commands](#windows-net_domain-commands)
+-	  [Running Remote Commands](#running-remote-commands)
+- 	[Windows Network Commands](#windows-netowrk-commands)
+- 	[Hidden tools in Command Line](#hidden-tools-in-command-line)
+- 	[Miscellaneous Commands Windows](#miscellaneous-commands-windows)
+- 	[PsExec](#psexec)
+- 	[Terminal Services](#terminal-services)
+- 	[WMIC](#wmic)
+- 	[Powershell](#powershell)
+- 	[Windows Registry](#windows-registry)
 
 **Networking**
 
