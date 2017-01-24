@@ -1746,7 +1746,7 @@ Common ports [[6]]
 | 5900 | TCP | VNC |
 | 6346 | TCP, UDP | Gnutella p2p network |
 | 8080 | TCP | HTTP |
-
+|
 
 [6]:<http://packetlife.net/media/library/23/common_ports.pdf>
 
