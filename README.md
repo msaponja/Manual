@@ -66,8 +66,8 @@ Table of contents
 
 -	[Literatura]
 
-Linux Network Commands 26
---------------------------
+Linux Network Commands
+----------------------
 
 General networking concepts that will help you in troubleshooting networks on Linux.
 
@@ -97,8 +97,6 @@ General networking concepts that will help you in troubleshooting networks on Li
     $ tcpkill host ip and port port              # Block ip:port
     $ echo "1" /proc/sys/net/ipv4/ip_forward     # Turn on IP Forwarding
     $ echo "nameserver x.x.x.x" /etc/resolv.conf # Add DNS Server
-
-[26]: <http://linux-training.be/linuxnet.pdf>
 
 
 Linux System Info [34]
