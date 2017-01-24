@@ -6,7 +6,7 @@ Table of contents
 
  **Linux**
   
-- 	[Linux Network Commands](#linux-network-commands)
+- 	[Linux Network Commands [[26]](#linux-network-commands)
 - 	[Linux System Info](#linux-system-info)
 - 	[Manipulating files](#manipulating-filess)
 - 	[Linux Misc Commands](#linux-misc-commands)
@@ -25,7 +25,7 @@ Table of contents
 - 	[Useful Run Commands](#useful-run-commands)
 - 	[Windows System Info Commands](#windows-system-info-commands)
 - 	[Windows Net_Domain Commands](#windows-net_domain-commands)
--	  [Running Remote Commands](#running-remote-commands)
+-	[Running Remote Commands](#running-remote-commands)
 - 	[Windows Network Commands](#windows-netowrk-commands)
 - 	[Hidden tools in Command Line](#hidden-tools-in-command-line)
 - 	[Miscellaneous Commands Windows](#miscellaneous-commands-windows)
