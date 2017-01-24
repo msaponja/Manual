@@ -1705,94 +1705,49 @@ Firefox has limited footprints regarding Registry activity. Firefox stores  web 
 Common ports [[6]]
 ------------------
 
-{| class="wikitable sortable" style="font-size:80%"
-! poort !! protocol !! omschrijving
-|-
-| 20 || TCP || FTP: [[File Transfer Protocol]]
-|-
-| 21 || TCP || FTP Control
-|-
-| 22 || TCP ||  SSH: [[Secure Shell]] 
-|-
-| 23 || TCP || [[Telnet]]
-|-
-| 25 || TCP || SMTP: [[Simple Mail Transfer Protocol]], verzending van e-mail ([[Mailserver|MTA]])
-|-
-| 53 || UDP, TCP || DNS: [[Domain Name System]]
-|-
-| 67 || UDP || DHCP Server
-|-
-| 68 || UDP || DHCP Client
-|-
-| 69 || UDP || TFTP: [[Trivial File Transfer Protocol]]
-|-
-| 80 || TCP || HTTP: [[Hypertext Transfer Protocol]]
-|-
-| 110 || TCP || POP3: [[Post Office Protocol]], ontvangen van e-mail
-|-
+| Port              | Protocol                 | Description               |                                         |
+|---------------------------------------|--------------------------------|-------------------------------|------------------------------------------------|
+| 20 | TCP | FTP |
+| 21 | TCP | FTP Control |
+| 22 | TCP | SSH |
+| 23 | TCP | Telnet |
+| 25 | TCP | SMTP |
+| 53 | UDP, TCP | DNS |
+| 67 | UDP | DHCP Server |
+| 68 | UDP | DHCP Client |
+| 69 | UDP | TFTP |
+| 80 | TCP | HTTP |
+| 110 ||TCP ||POP3: [[Post Office Protocol]], ontvangen van e-mail
 | 119 || TCP || NNTP: [[Network News Transfer Protocol]]
-|-
 | 123 || UDP || NTP: Network Time Protocol 
-|-
 | 137 ||  UDP || [[NetBIOS]] Name Service
-|-
 | 138 || UDP || NetBIOS Datagram Service
-|-
 | 139 || TCP || NetBIOS Session Service
-|-
 | 143 || TCP || IMAP: [[Internet Message Access Protocol]] 
-|-
 | 161 || UDP || SNMP: [[Simple Network Management Protocol]]
-|-
 | 162 || UDP || SNMP-trap: [[Simple Network Management Protocol]], getriggerde notificaties
-|-
 | 389 || TCP || LDAP: [[Lightweight Directory Access Protocol]]
-|-
 | 443 || TCP || HTTPS: [[HyperText Transfer Protocol]] over TLS/[[Secure Sockets Layer|SSL]]
-|-
 | 445 || TCP || Direct Hosting / [[Server Message Block|SMB]] ([[Samba (software)|Samba]]) over TCP
-|-
 | 465 || TCP || SMTP: [[Simple Mail Transfer Protocol]] over TLS/[[Secure Sockets Layer|SSL]]
-|-
 | 546 || UDP || [[DHCP]] Client (ipv6)
-|-
 | 547 || UDP || DHCP Server (ipv6)
-|-
 | 569 || TCP || MSN: [[Multiple Subscriber Number]] 
-|-
-| 587 || TCP || SMTP: [[Simple Mail Transfer Protocol]], verzending van uitgaande e-mail (MSA)<ref>{{en}}[http://www.ietf.org/rfc/rfc4409.txt RFC4409], ''Message Submission for Mail'', [[IETF]] (Internet Engineering Task Force)</ref>
-|-
+| 587 || TCP || SMTP: [[Simple Mail Transfer Protocol]]
 | 990 || TCP || FTPS: [[FTP over SSL]]
-|-
 | 993 || TCP || IMAP: [[Internet Message Access Protocol]] over TLS/[[Secure Sockets Layer|SSL]]
-|-
 | 995 || TCP || POP3: [[Post Office Protocol]], ontvangen van e-mail over TLS/[[Secure Sockets Layer|SSL]]
-|}
-
-==== Gebruikerspoorten ====
-{| class="wikitable sortable" style="font-size:80%"
-! poort !! protocol !! omschrijving
-|-
 | 1080 || TCP || [[SOCKS]] proxy 
-|-
 | 1194 || TCP || [[OpenVPN]]
-|-
 | 3306 || TCP, UDP || [[MySQL]] databasesysteem
-|-
 | 3389 || TCP || RDP: [[Remote Desktop Protocol]] 
-|-
 | 3689 || TCP || DAAP: [[Digital Audio Access Protocol]]
-|-
 | 5432 || TCP, UDP || [[PostgreSQL]] databasesysteem
-|-
 | 5800 || TCP || VNC: [[Virtual Network Computing]] 
-|-
 | 5900 || TCP || VNC: [[Virtual Network Computing]] 
-|-
 | 6346 || TCP, UDP || [[Gnutella]] [[p2p]] netwerk
-|-
 | 8080 || TCP || [[HTTP]] alternatief voor onder meer [[proxyserver]]s en [[Apache Tomcat]] 
-|}
+|
 
 [6]:<http://packetlife.net/media/library/23/common_ports.pdf>
 
