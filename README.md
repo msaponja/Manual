@@ -1705,7 +1705,8 @@ Firefox has limited footprints regarding Registry activity. Firefox stores  web 
 Common ports [[6]]
 ------------------
 
-| Port              | Protocol                 | Description               |---------------------------------------|--------------------------------|-------------------------------|------------------------------------------------|
+| Port        | Protocol           | Description  |
+| ----------- |:------------------:| ------------:|
 | 20 | TCP | FTP |
 | 21 | TCP | FTP Control |
 | 22 | TCP | SSH |
