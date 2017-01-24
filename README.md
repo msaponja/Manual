@@ -66,7 +66,7 @@ Table of contents
 
 -	[Literatura]
 
-Linux Network Commands [26](http://linux-training.be/linuxnet.pdf)
+Linux Network Commands [[26]](http://linux-training.be/linuxnet.pdf)
 ----------------------
 
 General networking concepts that will help you in troubleshooting networks on Linux.
