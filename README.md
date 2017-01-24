@@ -98,9 +98,8 @@ General networking concepts that will help you in troubleshooting networks on Li
     $ echo "1" /proc/sys/net/ipv4/ip_forward     # Turn on IP Forwarding
     $ echo "nameserver x.x.x.x" /etc/resolv.conf # Add DNS Server
 
-
 Linux System Info [[34]]
-----------------------
+------------------------
 
 Most common commands used to check information and configuration details about various hardware peripherals and devices.
 
@@ -157,7 +156,7 @@ Counting commands
 [25]: <http://www.penguintutor.com/linux/misc-quickreference>
 
 Manipulating files [[35]]
------------------------
+-------------------------
 
 Most frequently used Linux Commands for manipulating files.
 
@@ -168,8 +167,8 @@ Most frequently used Linux Commands for manipulating files.
     $ mkdir directory       # Create directories
 [35]: <http://linuxcommand.org/lts0050.php>
 
- Linux Misc Commands [[25]]
- ------------------------
+Linux Misc Commands [[25]]
+--------------------------
 
 Search commands
 
@@ -743,6 +742,7 @@ Kali Linux Commands [[24]]
     $ xargs 	  #  Execute utility, passing constructed argument lists
     $ xdg-open 	  #  Open a file or URL in the user’s preferred application
     $ yes 	      #  Print a string until interrupted
+    
 [24]: <https://techlog360.com/a-z-kali-linux-commands/>
 
 Using the PHP pfSense Shells [[49]]
@@ -776,12 +776,10 @@ Using the PHP pfSense shell allows configuration of the config.xml file directly
     write_config();                                                 # Save out the new configuration (config.xml)
     system_reboot_sync();                                           # Reboot the system after saving
 
-	
-
 [49]:<https://doc.pfsense.org/index.php/Using_the_PHP_pfSense_Shell>
 
 Solaris [[45]]
-------------
+--------------
 
     ifconfig -a                                 # List of interfaces
     netstat -in                                 # List of interface
@@ -811,8 +809,895 @@ Solaris [[45]]
     
 [45]:<https://www.google.hr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwiE1be92LDRAhUHkRQKHXnZAx8QFgggMAE&url=https%3A%2F%2Fwatchthestack.files.wordpress.com%2F2015%2F03%2Frtfm-red-team-field-manual.pdf&usg=AFQjCNGEsophTnPPNguco9UBIh0p92db_A&sig2=lEFteRB9djm24jYJoV5iTg>
 
+Windows Versions [[55]]
+-----------------------
 
+       NT 3.1   # Windows NT 3.1 (All)
+       NT 3.2   # Windows NT 3.5 (All)
+       NT 3.51  # Windows NT 3.51 (All)
+       NT 4.0   # Windows NT 4.0 (All)
+       NT 5.0   # Windows 2000 (All)
+       NT 5.1   # Windows XP (Home, Pro, MC, Tablet PC, Starter, Embedded)
+       NT 5.2   # Windows XP (64-bit, Pro 64-bit), Windows Server 2003 & R2 (Standard, Enterprise), Windows Home Server
+       NT 6.0   # Windows Vista (Starter, Home, Basic, Home Premium, Business, Enterprise, Ultimate), Windows Server 2008 (Foundation, Standard, Enterprise)
+       NT 6.1   # Windows 7 (Starter, Home, Pro, Enterprise, Ultimate), Windows Server 2008 R2 (Foundation, Standard, Enterprise)
+       NT 6.2   # Windows 8 (x86/64, Pro, Enterprise, Windows RT (ARM)), Windows Phone 8, Windows Server 2012 (Foundation, Essentials, Standard)
+       NT 6.3   # Windows 8.1 (Pro, Enterprise), Windows Server 2012 R2 (Foundation, Essentials, Standard, Datacenter)
+       NT 10.0  # Windows 10 (Home, Pro, Pro Education, Enterprise, Enterprise LTSB, Education, Mobile, Mobile Enterprise, IoT Core, IoT Enterprise, IoT Mobile Enterprise), Windows Server 2016 (Essentials, Standard, Datacenter)
 
+[55]: <https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions>
+       
+Startup Directories [[46]]
+--------------------------
 
+### NT 6.1
 
+    Personal Startup folder:
+    
+    %SystemDrive%\Users\<user_name>\AppData\Roaming\Microsoft\Windows\Start\ Menu\Programs\Startup
+    
+    All Users:
+    
+    %SystemDrive%\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
+    
+    Shortcut: Run -> shell:common startup
+    
+[46]: https://watchthestack.files.wordpress.com/2015/03/rtfm-red-team-field-manual.pdf
+       
+Useful Run Commands [[48]]
+--------------------------
+    		
+    access.cpl					        # Accessibility Controls
+    accwiz					            # Accessibility Wizard
+    hdwwiz.cpl					        # Add Hardware Wizard
+    appwiz.cpl					        # Add/Remove Programs
+    control admintools					# Administrative Tools
+    acrobat					            # Adobe Acrobat (if installed)
+    formdesigner					    # Adobe Designer (if installed)
+    acrodist					        # Adobe Distiller (if installed)
+    imageready					        # Adobe ImageReady (if installed)
+    photoshop					        # Adobe Photoshop (if installed)
+    wuaucpl.cpl					        # Automatic Updates
+    fsquirt					            # Bluetooth Transfer Wizard
+    calc					            # Calculator
+    certmgr.msc					        # Certificate Manager
+    charmap					            # Character Map
+    chkdsk					            # Check Disk Utility
+    clipbrd					            # Clipboard Viewer
+    cmd					                # Command Prompt
+    dcomcnfg					        # Component Services
+    compmgmt.msc					    # Computer Management
+    control					            # Control Panel
+    timedate.cpl					    # Date and Time Properties
+    ddeshare					        # DDE Shares
+    devmgmt.msc					        # Device Manager
+    directx.cpl					        # Direct X Control Panel (if installed)*
+    dxdiag					            # Direct X Troubleshooter
+    cleanmgr					        # Disk Cleanup Utility
+    dfrg.msc					        # Disk Defragment
+    diskmgmt.msc				    	# Disk Management
+    diskpart					        # Disk Partition Manager
+    control desktop				        # Display Properties
+    desk.cpl					        # Display Properties
+    control color					    # Display Properties (w/Appearance Tab Preselected)
+    drwtsn32					        # Dr. Watson System Troubleshooting Utility
+    verifier					        # Driver Verifier Utility
+    eventvwr.msc					    # Event Viewer
+    migwiz					            # Files and Settings Transfer Tool
+    sigverif					        # File Signature Verification Tool
+    findfast.cpl					    # Findfast
+    firefox					            # Firefox (if installed)
+    folders					            # Folders Properties
+    control fonts					    # Fonts
+    fonts					            # Fonts Folder
+    freecell					        # Free Cell Card Game
+    joy.cpl					            # Game Controllers
+    gpedit.msc					        # Group Policy Editor (XP Prof)
+    mshearts				        	# Hearts Card Game
+    helpctr				            	# Help and Support
+    hypertrm				        	# HyperTerminal
+    iexpress				        	# Iexpress Wizard
+    ciadv.msc				        	# Indexing Service
+    icwconn1				        	# Internet Connection Wizard
+    iexplore				        	# Internet Explorer
+    inetcpl.cpl				        	# Internet Properties
+    inetwiz				            	# Internet Setup Wizard
+    ipconfig /all				    	# IP Configuration (Display Connection Configuration)
+    ipconfig /displaydns				# IP Configuration (Display DNS Cache Contents)
+    ipconfig /flushdns					# IP Configuration (Delete DNS Cache Contents)
+    ipconfig /release					# IP Configuration (Release All Connections)
+    ipconfig /renew					    # IP Configuration (Renew All Connections)
+    ipconfig /registerdns				# IP Configuration (Refreshes DHCP & Re-Registers DNS)
+    ipconfig /showclassid				# IP Configuration (Display DHCP Class ID)
+    ipconfig /setclassid				# IP Configuration (Modifies DHCP Class ID)
+    jpicpl32.cpl					    # Java Control Panel (if installed)
+    javaws					            # Java Control Panel (if installed)
+    control keyboard					# Keyboard Properties
+    secpol.msc					        # Local Security Settings
+    lusrmgr.msc				        	# Local Users and Groups
+    logoff					            # Logs You Out Of Windows
+    mrt					                # Malicious Software Removal Tool
+    msaccess				        	# Microsoft Access (if installed)
+    winchat					            # Microsoft Chat
+    excel					            # Microsoft Excel (if installed)
+    frontpg					            # Microsoft Frontpage (if installed)
+    moviemk				            	# Microsoft Movie Maker
+    mspaint					            # Microsoft Paint
+    powerpnt				        	# Microsoft Powerpoint (if installed)
+    winword				            	# Microsoft Word (if installed)
+    mobsync					            # Microsoft Syncronization Tool
+    winmine				            	# Minesweeper Game
+    control mouse				    	# Mouse Properties
+    main.cpl				        	# Mouse Properties
+    nero				            	# Nero (if installed)
+    conf					            # Netmeeting
+    control netconnections				# Network Connections
+    ncpa.cpl					        # Network Connections
+    netsetup.cpl				    	# Network Setup Wizard
+    notepad					            # Notepad
+    nvtuicpl.cpl				    	# Nview Desktop Manager (if installed)
+    packager					        # Object Packager
+    odbccp32.cpl				    	# ODBC Data Source Administrator
+    osk					                # On Screen Keyboard
+    ac3filter.cpl				       	# Opens AC3 Filter (if installed)
+    msimn				            	# Outlook Express
+    pbrush					            # Paint
+    password.cpl				    	# Password Properties
+    perfmon.msc				        	# Performance Monitor
+    perfmon				            	# Performance Monitor
+    telephon.cpl				    	# Phone and Modem Options
+    dialer					            # Phone Dialer
+    pinball				            	# Pinball Game
+    powercfg.cpl				    	# Power Configuration
+    control printers					# Printers and Faxes
+    printers				        	# Printers Folder
+    eudcedit				        	# Private Character Editor
+    QuickTime.cpl			    		# Quicktime (If Installed)
+    quicktimeplayer				    	# Quicktime Player (if installed)
+    realplay				        	# Real Player (if installed)
+    intl.cpl			    	    	# Regional Settings
+    regedit				            	# Registry Editor
+    regedit32				        	# Registry Editor
+    rasphone					        # Remote Access Phonebook
+    mstsc					            # Remote Desktop
+    ntmsmgr.msc				        	# Removable Storage
+    ntmsoprq.msc				    	# Removable Storage Operator Requests
+    rsop.msc					        # Resultant Set of Policy (XP Prof)
+    sticpl.cpl				        	# Scanners and Cameras
+    control schedtasks					# Scheduled Tasks
+    wscui.cpl					        # Security Center
+    services.msc					    # Services
+    fsmgmt.msc					        # Shared Folders
+    shutdown					        # Shuts Down Windows
+    mmsys.cpl					        # Sounds and Audio
+    spider				            	# Spider Solitare Card Game
+    cliconfg				        	# SQL Client Configuration
+    sysedit				            	# System Configuration Editor
+    msconfig				        	# System Configuration Utility
+    sfc /scannow				    	# System File Checker Utility (Scan Immediately)
+    sfc /scanonce				    	# System File Checker Utility (Scan Once At The Next Boot)
+    sfc /scanboot					    # System File Checker Utility (Scan On Every Boot)
+    sfc /revert				           	# System File Checker Utility (Return Scan Setting To Default)
+    sfc /purgecache					    # System File Checker Utility (Purge File Cache)
+    sfc /cachesize=x					# System File Checker Utility (Sets Cache Size to size x)
+    msinfo32					        # System Information
+    sysdm.cpl					        # System Properties
+    taskmgr				            	# Task Manager
+    tcptest					            # TCP Tester
+    telnet					            # Telnet Client
+    tweakui					            # Tweak UI (if installed)
+    nusrmgr.cpl				        	# User Account Management
+    utilman				            	# Utility Manager
+    wab				                	# Windows Address Book
+    wabmig					            # Windows Address Book Import Utility
+    ntbackup				        	# Windows Backup Utility (if installed)
+    explorer				        	# Windows Explorer
+    firewall.cpl				    	# Windows Firewall
+    magnify				            	# Windows Magnifier
+    wmimgmt.msc			        		# Windows Management Infrastructure
+    wmplayer				        	# Windows Media Player
+    msmsgs					            # Windows Messenger
+    wiaacmgr				        	# Windows Picture Import Wizard (need camera connected)
+    syskey					            # Windows System Security Tool
+    wupdmgr					            # Windows Update Launches
+    winver					            # Windows Version (to show which version of windows)
+    tourstart				        	# Windows XP Tour Wizard
+    write				            	# Wordpad
+[48]:<http://mypchell.com/guides/34-guides/69-156-useful-run-commands>
+    		
+Systeminfo[[54]]
+----------------
 
+### Syntax
+
+    systeminfo [/s <Computer> [/u <Domain>\<UserName> [/p <Password>]]] [/fo {TABLE | LIST | CSV}] [/nh]
+    
+    /s  # Specifies the name or IP address of a remote computer
+    /u  # Runs the command with the account permissions of the specified user account
+    /p  # Specifies the password of the user account that is specified in the /u parameter
+    /fo # Specifies the output format
+    /nh # Suppresses column headers in the output.
+    /?  # Displays help at the command prompt.
+    
+# Tasklist
+
+### Syntax
+
+    tasklist[.exe] [/s computer] [/u domain\user [/p password]] [/fo {TABLE|LIST|CSV}] [/nh] [/fi FilterName [/fi FilterName2 [ ... ]]] [/m [ModuleName] | /svc | /v]
+# Reg query
+
+### Syntax
+    reg query <KeyName> [{/v <ValueName> | /ve}] [/s] [/se <Separator>] [/f <Data>] [{/k | /d}] [/c] [/e] [/t <Type>] [/z]
+    
+    /ve         # Runs a query for value names that are empty
+    /s          # Specifies to query all subkeys and value names recursively
+    /se         # Specifies the single value separator to search for in the value name type REG_MULTI_SZ
+    /f          # Specifies the data or pattern to search for
+    /k          # Specifies to search in key names only
+    /d          # Specifies to search in data only
+    /c          # Specifies that the query is case sensitive
+    /e          # Specifies to return only exact matches
+    /t <Type>   # Specifies registry types to search
+    /z          # Specifies to include the numeric equivalent for the registry type in search results
+    
+
+[54]:<https://technet.microsoft.com/en-us/library/cc771190(v=ws.11).aspx>    		
+       
+Windows Net/Domain Commands[[52]]
+---------------------------------
+
+### Net user - Syntax
+
+    net user [<UserName> {<Password> | *} [<Options>]] [/domain]
+    net user [<UserName> {<Password> | *} /add [<Options>] [/domain]]
+    net user [<UserName> [/delete] [/domain]]
+    
+### Net user - Examples
+
+    net view \\production   # To see a list of the resources shared by the \\Production computer
+    net view /domain:sales  # To see a list of the computers in the sales domain or workgroup
+    
+### Net view - Syntax
+
+    net view [\\ComputerName [/CACHE] | [/ALL] | /DOMAIN[:DomainName]]
+    
+### Net group - Syntax
+
+    net group [<GroupName> [/comment:"<Text>"]] [/domain]
+    net group [<GroupName>{/add [/comment:"<Text>"] | /delete} [/domain]]
+    net group [<GroupName> <UserName>[ ...] {/add | /delete} [/domain]]
+    
+### Net group - Examples
+
+    net group                                           # This example lists all the groups on the local server
+    net group exec /add                                 # This example adds a group called Exec to the local user accounts database
+    net group exec /add /domain                         # This example adds a group called Exec to the domain database
+    net group exec estherv ralfr stevent /add           # This example adds the existing user accounts estherv, ralfr, and stevent to the Exec group on the local computer
+    net group exec estherv ralfr stevent /add /domain   # This example adds the existing user accounts estherv, ralfr, and stevent to the Exec group in the domain database
+    net group exec                                      # This example displays users in the Exec group
+    net group exec /comment:"The executive staff"       # This example adds a comment to the Exec group record
+
+[52]: <https://technet.microsoft.com/en-us/library/cc754051(v=ws.11).aspx>
+    
+Running remote commands[[42]]
+-----------------------------
+
+Many Windows PowerShell cmdlets have the ComputerName parameter that enables you to collect data and change settings on one or more remote computers. They use a variety of communication technologies and many work on all Windows operating systems that Windows PowerShell supports without any special configuration.
+
+Typically, cmdlets that support remoting without special configuration have the ComputerName parameter and do not have the Session parameter. To find these cmdlets in your session, type:
+
+    Get-Command | where { $_.parameters.keys -contains "ComputerName" -and $_.parameters.keys -notcontains "Session"}
+
+### Start an Interactive Session
+
+To start an interactive session with a single remote computer, we use the Enter-PSSession cmdlet.
+
+    Enter-PSSession Server01
+    
+### Exit Session
+
+    Exit-PSSession
+    
+### Running a remote command
+
+To run any command on one or many remote computers, use the Invoke-Command cmdlet. For example, to run a Get-UICulture command on the Server01 and Server02 remote computers, type:
+
+    Invoke-Command -ComputerName Server01, Server02 {Get-UICulture}
+
+### Output example
+
+![Untitled.png](https://www.dropbox.com/s/k545zhqu94vn33c/Untitled.png?dl=0&raw=1)
+
+### Run a script
+
+    Invoke-Command -ComputerName Server01, Server02 -FilePath c:\Scripts\DiskCollect.ps1
+    
+### Establish a Persistent Connection
+Following command creates a remote session on the Server01 computer and another remote session on the Server02 computer. It saves the session objects in the $s variable.
+
+    $s = New-PSSession -ComputerName Server01, Server02
+    
+following command creates a remote session on the Server01 computer and another remote session on the Server02 computer. It saves the session objects in the $s variable.
+
+    Invoke-Command -Session $s {$h = Get-HotFix}
+    
+Now you can use the data in the $h variable in subsequent commands, such as the following one. The results are displayed on the local computer.
+
+    Invoke-Command -Session $s {$h | where {$_.installedby -ne "NTAUTHORITY\SYSTEM"}}
+    
+[42]: <https://msdn.microsoft.com/en-us/powershell/scripting/core-powershell/running-remote-commands>
+    
+Windows network commands[[53]]
+------------------------------
+
+    $ Arp                       # Display or manipulate the ARP information on a network device or computer.
+    $ Finger                    # The finger command available in Unix and Linux variants allows a user to find sometimes personal information about a user. 
+    $ Hostname                  # The hostname command displays the host name of the Windows XP computer currently logged into
+    $ Ipconfig                  # Display the network settings currently assigned and given by a network
+    $ Pathping                  # Pathping is an MS-DOS utility available for Microsoft Windows 2000 and Windows XP users. This utility enables a user to find network latency and network loss
+    $ Ping                      # Pinging another address helps determine if the network card can communicate within the local network or outside network
+    $ Nbstat                    # The nbtstat MS-DOS utility that displays protocol statistics and current TCP/IP connections using NBT
+    $ Net                       # The net command is available in MS-DOS and Windows and is used to set, view, and determine network settings
+    $ Netstat                   # The netstat command is used to display the TCP/IP network protocol statistics and information
+    $ Nslookup                  # The nslookup MS-DOS utility that enables a user to do a reverse lookup on an IP address of a domain or host on a network
+    $ Route                     # The route MS-DOS utility enables computers to view and modify the computer's route table
+    & Tracert and traceroute    # It allows you to view a listing of how a network packet travels through the network and where it may fail or slow down
+    $ Whois                     # The whois command available in Unix and Linux variants helps allow a user to identify a domain name. This command provides information about a domain name much like the WHOIS on network solutions.
+    $ Winipcfg                  # The winipcfg command available in Windows allows a user to display network and network adapter information. Here, a user can find such information as an IP address, Subnet Mask, Gateway, etc.
+    
+[53]: <http://www.computerhope.com/issues/ch000444.htm>
+    
+Hidden tools in Command Line[[10]]
+----------------------------------
+
+NOTICE: You need to run CMD with administrator privileges
+
+### System file checker
+
+    $ sfc /scannow      # This performs an immediate scan of your system and will replace files as necessary. You may need to restart Windows when it's done if it finds problems
+    $ sfc /scanonce     # This performs a scan the next time you restart your system
+    $ sfc /scanboot     # This schedules a scan to be performed every time you restart your system
+    $ sfc Revert        # This returns the System File Checker to its default settings. You can use it to turn off the /scanboot option, for example
+    
+### Check disk
+
+    $ chkdsk Volume     # If you want to check a whole drive, just type the drive letter
+    $ chkdsk Filename   # You can also use chkdsk to check a single file or group of files
+    $ chkdsk /F         # Run it with this option to have chkdsk go ahead and fix those errors
+    $ chkdsk /R         # This option forces chkdsk to locate bad sectors and recover information from them. If chkdsk cannot lock the disk (which it usually can't since you're actually using Windows), it will prompt you run the command the next time you restart Windows
+
+### Cipher
+    
+    $ cipher /W:pathname    # The /W option removes data on unused portions of a volume, effectively erasing data that may be hanging around on your hard drive after deletion. You can point cipher at an entire volume (like C:) or a specific folder
+    
+    NOTICE: This applies to traditional hard drives and not SSDs
+    
+### Driverquery
+
+    $ driverquery /s        # This option lets you specify the name or IP address of a remote computer so that you investigate the drivers it has installed
+    $ driverquery /si       # This option shows you the digital signature information for drivers
+    $ driverquery /fo       # This is really the key option you'll use with driverquery. It lets you specify the format in which information is displayed so that you can more effectively save it as a report.
+    
+    Example: driverquery /fo CSV > drivers.csv
+    
+![g91lech9vvrplpbh0qnd.png](https://www.dropbox.com/s/mfgbhgugjic88vq/g91lech9vvrplpbh0qnd.png?dl=0&raw=1)
+    
+[10]: <http://lifehacker.com/the-best-tools-hidden-in-windows-command-line-1553193077>
+    
+Miscellaneous commands Windows [[37]]
+-------------------------------------
+
+### Lock Workstation
+
+    rundll32.dll user32.dll LockWorkstation
+    
+### Disable Windows Firewall
+
+    netsh advfirewall set currentprofile state off
+    netsh advfirewall set allprofiles state off
+    
+### Native Windows Port Forward
+
+    netsh interface portproxy add v4tov4 listenport=3000
+    netsh advfirewall set allprofiles state off
+    
+### Native Windows Port Forward
+
+    netsh interface portproxy add v4tov4 listenport=3000
+    listenaddress=l.l.l.l connectport=4000 connectaddress=2.2.2.2
+    
+    #Remove
+    netsh interface portproxy delete v4tov4 listenport=3000
+    listenaddress=l.l.l.l
+    
+    NOTICE: Must use administrative privileges.
+    
+### Re-Enable Command prompt
+
+    reg add HKCU\Software\Policies\t1icrosoft\Windows\System /v DisableCHD /tREG DWORD /d 0 /f
+
+[37]: <https://watchthestack.files.wordpress.com/2015/03/rtfm-red-team-field-manual.pdf>               
+       
+PsExec [[41]]
+-------------
+
+PsExec is a light-weight telnet-replacement that lets you execute processes on other systems, complete with full interactivity for console applications, without having to manually install client software.
+
+    # The following command launches an interactive command prompt on \\marklap:
+    
+    psexec \\marklap cmd
+    
+    # This command executes IpConfig on the remote system with the /all switch, and displays the resulting output locally
+    
+    psexec \\marklap ipconfig /all
+    
+    # This command copies the program test.exe to the remote system and executes it interactively
+    
+    psexec \\marklap -c test.exe
+    
+    # Specify the full path to a program that is already installed on a remote system if its not on the system's path
+    
+    psexec \\marklap c:\bin\test.exe
+    
+    # Run Regedit interactively in the System account to view the contents of the SAM and SECURITY keys
+    
+    psexec -i -d -s c:\windows\regedit.exe
+    
+    # To run Internet Explorer as with limited-user privileges use this command
+    
+    psexec -l -d "c:\program files\internet explorer\iexplore.exe"    
+
+[41]: <https://technet.microsoft.com/en-us/sysinternals/pxexec.aspx>       
+
+Terminal Services [[47]]
+------------------------
+
+Terminal Services provides the ability to host multiple, simultaneous client sessions on Microsoft Windows Server 2003.
+
+### Terminal Services Arhitecture
+
+![aa.gif](https://www.dropbox.com/s/mon59ohqha3p7g8/aa.gif?dl=0&raw=1)
+
+### Start RDP
+
+    1. Create regfile.reg file with following line in it:
+    HKEY LOCAL t1ACHINE\SYSTEH\CurrentControlSet \Control\ TerminalService
+    2. "fDe~yTSCo~nections"=dword: 00000000
+    3. reg import reg file. reg
+    4. net start ''terrnservice''
+    5. sc config terrnservice start= auto
+    6. net start terrnservice
+    
+### Disable Network Level Authentification, Add Firewall Excpetion
+
+    reg add "HKEY LOCAL t1ACHINE\SYSTEt1\CurentControlSet\Control \Terminal
+    Server\WinStations\RDP-TCP" /v UserAuthentication /t REG_DWORD /d "0" /f
+    netsh firewall set service type = remotedesktop mode = enable
+
+[47]: <https://technet.microsoft.com/en-us/library/cc755399(v=ws.10).aspx>
+
+WMIC[[51]]
+----------
+
+WMIC extends WMI for operation from several command-line interfaces and through batch scripts. Before WMIC, you used WMI-based applications (such as SMS), the WMI Scripting API, or tools such as CIM Studio to manage WMI-enabled computers. Without a firm grasp on a programming language such as C++ or a scripting language such as VBScript and a basic understanding of the WMI namespace, do-it-yourself systems management with WMI was difficult. WMIC changes this situation by giving you a powerful, user-friendly interface to the WMI namespace.
+
+### Listing 1: Code to Display
+
+    Results at the
+    Console from a WMIC Batch File
+    wmic /node:SERVER1, SERVER4
+        cpu get name, caption,
+        maxclockspeed, systemname
+        /format:textvaluelist.xsl
+        
+### Listing 2: Code to Use Variables in a WMIC Batch File
+
+    @echo off
+    if "%1"=="" goto msg
+    if "%2"=="" goto single
+    wmic /node:%1, %2 cpu get name,
+     caption, maxclockspeed,
+     systemname
+     /format:textvaluelist.xsl
+    goto end
+    :single
+    wmic /node:%1 cpu get name,
+        caption, maxclockspeed,
+        systemname
+        /format:textvaluelist.xsl
+    goto end
+    :msg
+    echo you must specify at least
+        one computer name.
+    :end
+
+### Listing 3: Code to Direct WMIC Output to an HTML File
+    wmic /node:SERVER4
+      /output:e:\file1.htm cpu get
+      description, maxclockspeed,
+      extclock, manufacturer,
+      revision /format:hform.xsl
+### Listing 4: Code to Direct Class
+    Command Output to an HTML File
+wmic /output:e:\se_class.htm
+      class WIN32_SOFTWAREELEMENT
+      get
+### Listing 5: Code to Generate XML Output from a WMIC Command
+     wmic cpu get maxclockspeed
+       /translate:basicxml
+      /format:rawxml.xsl
+[51]: <https://msdn.microsoft.com/en-us/library/bb742610.aspx>
+
+Powershell [[40]]
+----------------
+
+    #	                                # Comment / Remark
+    $_	                                # The current pipeline object
+    $variable = "value"	                # Define a variable  also: ${n!a#me} = "value"
+    %	                                # Alias for ForEach-Object
+    --%	                                # Stop parsing input
+    & (call)	                        # Run a command, script or function
+    . (source)	                        # Run a command script in the current shell
+    ?           	                    # Alias for Where-Object
+    @(...)	                            # Force an expression to be evaluated as an array
+    #NAME?      	                    # Format operator
+    Active Directory	                # Account, Computer, Group and User cmdlets
+    Add-Computer	                    # Add a computer to the domain
+    Add-Content	                        # Add to the content of the item
+    Add-History	                        # Add entries to the session history
+    Add-Member	                        # Add a member to an instance of a PowerShell object
+    Add-PsSnapIn	                    # Add snap-ins to the console
+    Add-Type    	                    # Add a .NET Framework type to a PowerShell session
+    Add-WindowsFeature	                # Install roles, role services, and features
+    Backup-GPO	                        # Backup group policy objects (GPOs)
+    Backup-GPO	                        # Backup group policy objects (GPOs)
+    Begin	                            # Function BEGIN block
+    BITS	                            # Background Intelligent Transfer Service cmdlets
+    Break	                            # Exit a program loop
+    Catch	                            # Handle a terminating error within a scriptblock
+    Checkpoint-Computer	                # Create a system restore point (XP)
+    Checkpoint-Web	                    # Create a checkpoint for an IIS web app
+    Clear-Content	                    # Remove content from a file/item
+    Clear-EventLog	                    # Delete all entries from an event log
+    Clear-History	                    # Delete entries from the session history
+    Clear-Host	                        # Clear the screen
+    Clear-Host	                        # Clear the screen
+    Clear-Item	                        # Remove content from a variable or an alias
+    Clear-ItemProperty	                # Remove the property value from a property
+    Clear-Variable	                    # Remove the value from a variable
+    Compare-Object	                    # Compare the properties of objects
+    Compare-Object	                    # Compare the properties of objects
+    Complete-Transaction                # Commit the transaction
+    Compress-Archive                    # Create a new archive/zipped file [PS 5+]
+    Connect-WSMan	                    # Connect to the WinRM service on a remote computer
+    Continue	                        # Skip just this iteration of a loop
+    ConvertFrom-CSV	                    # Convert object properties (in CSV format) into CSV objects
+    ConvertFrom-SecureString	        # Convert a secure string into an encrypted standard string
+    ConvertFrom-StringData	            # Convert a here-string into a hash table
+    Convert-Path	                    # Convert a ps path to a provider path
+    ConvertTo-CSV	                    # Convert .NET Framework objects into CSV variable
+    ConvertTo-Html	                    # Convert the input into an HTML table
+    ConvertTo-SecureString	            # Convert an encrypted standard string into a secure string
+    ConvertTo-Xml	                    # Convert the input into XML
+    Copy-Item	                        # Copy an item from a namespace location
+    Copy-ItemProperty	                # Copy a property along with it's value
+    Debug-Process	                    # Attach a debugger to a running process
+    Disable-ComputerRestore	            # Disable System Restore on a drive
+    Disable-PSBreakpoint	            # Disable a breakpoint in the current console
+    Disable-PSRemoting	                # Disable remote session configuration on the local computer
+    Disable-PSSessionConfiguration  	#  Disable session configurations on the local computer
+    Disable-WSMAnCredSSP 	            # Disable Credential Security Service Provider (SSP) authentication
+    Disconnect-WSMan	                # Disconnect from the WinRM service on a remote
+    Do	                                # Loop while a condition is True
+    Enable-ComputerRestore	            # Enable System Restore on a drive
+    Enable-PSBreakpoint	                # Enable a breakpoint in the current console
+    Enable-PSRemotRemoting	            # Run PowerShell commands on remote computers
+    Enable-PSSessionConfiguration	    # Enable session configurations on the local computer
+    Enable-WSManCredSSP 	            # Enable Credential SSP authentication
+    End	                                # Function END block
+    Enter-PSSessio	                    # Start an interactive session with a remote computer
+    Exit-PSSession	                    # Exit PowerShell (or exit a script)
+    Exit-PSSession	                    # End an interactive session with a remote computer
+    Expand-Archive	                    # Extract files from an archive (zipped) file [PS
+    Export-Alias	                    # Export an alias list to a file
+    Export-Clixml	                    # Produce a clixml representation of PowerShell ob
+    Export-Console	                    # Export console configuration to a file
+    Export-Counter	                    # Export Performance Counter data to log files
+    Export-Csv	                        # Export to Comma Separated Values (spreadsheet)
+    Export-FormatData	                # Save formatting data from the current session
+    Export-ModuleMember	                # Export specific module members
+    Export-PSSession	                # Import commands and save them in a PowerShell mo
+    For	                                # Loop through items that match a condition
+    ForEach	                            # Loop through each item in a collection
+    ForEach method	                    # Loop through each item in a collection
+    ForEach-Object	                    # Reach  Loop through each item in the pipeline ( % )
+    Format-Custom	                    # Format output using a customized view
+    Format-List	                        # Format output as a list of properties, each on a
+    Format-Table	                    # Format output as a table
+    Format-Wide	                        # Format output as a table listing one property on
+    Get-Acl	                            # Get permission settings for a file or registry ke
+    Get-Alias	                        # Return alias names for Cmdlets
+    Get-AuthenticonSignature	        # Get the signature object associated with a file
+    Get-ChildItem	                    # Get child items (contents of a folder or registry)
+    Get-Command	                        # Get basic information about cmdlets
+    Get-Command	                        # Retrieve basic information about a command
+    Get-ComputerRestorePoint	        # Get the restore points on the local computer
+    Get-Content 	                    # Get content from item (specific location)
+    Get-Counter	                        # Get performance counter data
+    Get-Credential	                    # Get a security credential (username/password)
+    Get-Culture	                        # Get region information (language and keyboard la
+    Get-Date	                        # Get current date and time
+    Get-DscConfiguration	            # Get the current config. of a node
+    Get-DscLocalConfigurationManager	# Get Local Config Manager settings
+    Get-DscResource	                    # Get Desired State Config. resources from a compute
+    Get-Event	                        # Get events in the PowerShell event queue
+    Get-Eventlog	                    # Get event log data (2003)
+    Get-EventSubscriber	                # Get event subscribers
+    Get-ExecutionPolicy	                # Get the execution policy for the shell
+    Get-FormatData	                    # Get the formatting data in the current session
+    Get-Help	                        # Open the help file
+    Get-History  	                    # Get a listing of the session history
+    Get-Host	                        # Get host information (PowerShell Version and Region)
+    Get-HotFix	                        # Get Installed hotfixes
+    Get-Item	                        # Get a file/registry object (or any other namespa
+    Get-Item	                        # Get a file object or get a registry (or other names)
+    Get-ItemProperty	                # Retrieve the properties of an object
+    Get-Job	                            # Get PowerShell background jobs that are running
+    Get-Location	                    # Get and display the current location
+    Get-Member	                        # Enumerate the properties of an object
+    Get-Module	                        # Get the modules imported to the session
+    Get-Pfxcertificate	                # Get pfx certificate information
+    Get-Process	                        # Get a list of processes on a machine
+    Get-PSBreakpoint	                # Get the currently set breakpoints
+    Get-PSDrive	                        # Get drive information (DriveInfo)
+    Get-PSProvider	                    # Get information for the specified provider
+    Get-PSSession	                    # Get the PSSessions in the current session
+    Get-PSSessionConfiguration	        # Get the registered PS session configuration
+    Get-PsSnapin	                    # List PowerShell snap-ins on this computer
+    Get-Random	                        # Get a random number
+    Get-Service	                        # Get a list of services
+    Get-Tracesource	                    # Get components that are instrumented for tracing
+    Get-Transaction	                    # Get information about the active transaction
+    Get-Uiculture	                    # Get the ui culture information
+    Get-Unique	                        # Get the unique items in a collection
+    Get-Variable	                    # Get a PowerShell variable
+    Get-WebApplicationMonitoringStatus	# Get the monitoring status of web apps
+    Get-WindowsFeature	                # Retrieve roles, role services, and features
+    Get-WinEvent	                    # Get event log data (Vista+)
+    Get-WmiObject	                    # Get WMI class information
+    Get-WSManCredSSP  	                # Get the Credential SSP configuration
+    Get-WSManInstance 	                # Display management information (XML or value)
+    Group-Object	                    # Group objects that contain the same value
+    if	                                # Conditionally perform a command
+    Import-Alias	                    # Import an alias list from a file
+    Import-Clixml	                    # Import a clixml file and rebuild the PS object
+    Import-Counter	                    # Import performance counter log files
+    Import-Csv	                        # Take values from a CSV list and send objects dow
+    Import-GPO	                        # Import Group Policy settings into a specified GPO
+    Import-Module	                    # Add a module to the session
+    Import-PSSession	                # Import commands from another session
+    Invoke-Command	                    # Run commands on local and remote computers
+    Invoke-Command	                    # Run command
+    Invoke-Express	                    # Run a PowerShell expression
+    Invoke-History	                    # Invoke a previously executed Cmdlet
+    Invoke-Item	                        # Invoke an executable or open a file (START)
+    Invoke-WmiMethod	                # Call WMI methods
+    Invoke-WSManAction	                # Invoke an action on a specified object
+    Job Trigger cmdlets	                # Get/Set Scheduled job triggers
+    Join-Path	                        # Combine a path and child-path
+    Limit-EventLog	                    # Limit the size of the event log
+    Measure-Command	                    # Measure running time
+    Measure-Object	                    # Measure the properties of an object
+    Move-Item	                        # Move an item from one location to another
+    Move-ItemProperty	                # Move a property from one location to another
+    New-Alias	                        # Create a new alias.
+    New-DSCCheckSum	                    # Create checksum files for DSC docs/resources
+    New-Event	                        # Create a new event
+    New-Eventlog	                    # Create a new event log and a new event source
+    New-Item   	                        # Create a new item in a namespace
+    New-ItemProperty	                # Set a new property
+    New-Module	                        # Create a new dynamic module (only in memory)
+    New-Object	                        # Create a new .Net object
+    New-PSDrive	                        # Create a mapped network drive
+    New-PSSession	                    # Create a persistent connection to a local or remote
+    New-PSSessionOption	                # Advanced options for a PSSession
+    New-Service	                        # Create a new service
+    New-Timespan	                    # Create a timespan object
+    New-Variable	                    # Create a new variable
+    New-WebServiceProxy	                # Create a Web service proxy object
+    New-WSManInstance 	                # Create a new instance of a management resource
+    New-WSManSessionOption 	            # Options for WSMan commands
+    Out-Default	                        # Send output to default
+    Out-File	                        # Send output to a file
+    Out-GridView	                    # Send output to an interactive table
+    Out-Host	                        # Send output to the host
+    Out-Null	                        # Send output to null
+    Out-Printer	                        # Send the output to a printer
+    Out-String	                        # Send objects to the host as strings
+    Param	                            # Script Parameters
+    Pause	                            # Pause and display the message "Press Enter to continue"
+    Pop-Location	                    # Set the current working location from the stack
+    Pop-Location	                    # Set the current working location from the stack
+    Powershell	                        # Launch a PowerShell session
+    Process	                            # Function PROCESS block
+    Push-Location	                    # Push a location to the stack
+    Push-Location	                    # Push a location to the stack
+    Quest AD 	                        # Read and write to Active Directory
+    Read-Host	                        # Read a line of input from the host console
+    Read-Host	                        # Read a line of input from the host console
+    Receive-Job	                        # Get PowerShell background job results
+    Register-EngineEvent 	            # Subscribe to PowerShell events
+    Register-ObjectEvent   	            # Subscribe to .NET events
+    Register-PSSessionConfiguration 	# Create and register a new PS session confi
+    Register-WmiEvent	                # Subscribe to a WMI event
+    Remove-Computer	                    # Remove the local computer from a workgroup or doma
+    Remove-Event	                    # Delete events from the event queue
+    Remove-EventLog	                    # Delete an event log
+    Remove-Item  D	                    # se/rd/rm/rmdir   Delete an item
+    Remove-Item  r	                    # erase/rd/ri/rmdir   Remove an item
+    Remove-Item  r	                    # erase/rd/ri/rmdir   Remove an item
+    Remove-ItemProperty	                # Remove a property and its value
+    Remove-Job	                        # Delete a PowerShell background job
+    Remove-Module	                    # Remove a module from the current session
+    Remove-PSBreakpoint 	            # Delete breakpoints from the current console
+    Remove-PSDrive	                    # Remove a provider/drive from its location
+    Remove-PSSession	                # Close PowerShell sessions
+    Remove-PSSnapin	                    # Remove PowerShell snap-ins from the console
+    Remove-Variable	                    # Remove a variable and its value
+    Remove-Windows	                    # Remove roles, role services, and features
+    Remove-WmiObject	                # Delete an instance of a WMI class
+    Remove-WSManInstance    	        # Delete a management resource instance
+    Rename-Item	                        # Change the name of an existing item
+    Rename-ItemProperty	                # Rename a property of an item
+    Rename-ItemProperty	                # Renames a property at its location
+    Reset-Computer	                    # Password Reset the machine account password for the computer
+    Resolve-Path	                    # Resolves the wildcards in a path
+    Restart-Computer	                # Restart the operating system on a computer
+    Restart-Service	                    # Stop and then restart a service
+    Restore-Computer	                # Restore the computer to a previous state
+    Restore-GPO	                        # Restore one or all GPOs from a GPO backup
+    Resume-Service	                    # Resume a suspended service
+    Return	                            # Exit the current scope, (function, script, or script block)
+    Run/Call	                        # Run a command (call operator)
+    Scheduler 	                        # Get/Set scheduled jobs
+    Select-Object	                    # Select properties of objects
+    Select-Object	                    # Select properties of objects
+    Select-String	                    # Search through strings or files for patterns
+    Select-XML	                        # Find text in an XML string or document
+    Send-MailMessage	                # Send an email message
+    Send-MailMessage	                # Send an email message
+    Set-Acl	                            # Set permissions
+    Set-Alias	                        # Create or change an alias
+    Set-AuthenticodeSignature	        # Place a signature in a .ps1 script or other file
+    Set-Content	                        # Set content in the item (specific location)
+    Set-Date	                        # Set system time on the host system
+    Set-ExecutionPolicy	                # Change the execution policy (user preference)
+    Set-Item	                        # Change the value of an item
+    Set-ItemProperty	                # Set a property at the specified location to a specified value
+    Set-Location	                    # Set the current working location
+    Set-Location	                    # Set the current working location
+    Set-PSBreakpoint	                # Set a breakpoint on a line, command, or variable
+    Set-PSdebug	                        # Turn script debugging on or off
+    Set-PSSessionConfiguration	        # Change properties of a registered session config
+    Set-Service	                        # Change the start mode/properties of a service
+    Set-StrictMode	                    # Enforce coding rules in expressions & scripts
+    Set-Tracesource	                    # Trace a PowerShell component
+    Set-Variable	                    # Set a variable and a value
+    Set-WmiInstance	                    # Create or update an instance of an existing WMI class
+    Set-WSManInstance	                # Modify the management information related to a resource
+    Set-WSManQuickConfig	            # Configure the local computer for remote management
+    Show-EventLog	                    # Display an event log
+    Sort-Object	                        # Sort objects by property value
+    Sort-Object	                        # Sort objects by property value
+    Split-Path	                        # Return part of a path
+    Start-DscConfiguration	            # Apply Desired State config to nodes
+    Start-Job	                        # Start a PowerShell background job
+    Start-Process	                    # Start one or more processes
+    Start-Service	                    # Start a stopped service
+    Start-Sleep	                        # Suspend shell, script, or runspace activity
+    Start-Transaction	                # Start a new transaction
+    Start-Transcript	                # Start a transcript of a command shell session
+    Stop-Computer	                    # Stop (shut down) a computer
+    Stop-Job	                        # Stop a PowerShell background job
+    Stop-Process	                    # Stop a running process
+    Stop-Process	                    # Stop a running process
+    Stop-Service	                    # Stop a running service
+    Stop-Transcript	                    # Stop the transcription process
+    Suspend-Service	                    # Suspend a running service
+    Switch	                            # Multiple if statements
+    Tee-Object	                        # Send input objects to two places
+    Test-ComputerSecureChannel 	        # Test and repair the secure channel to the domain
+    Test-Connection	                    # Ping one or more computers
+    Test-Path	                        # Return true if the path exists, otherwise return false
+    Test-WSMan	                        # Test if a computer is setup to receive remote command
+    Trace-Command	                    # Trace an expression or command
+    Trap	                            # Handle a terminating error
+    Try ... Catch	                    # Handle a terminating error within a scriptblock
+    Unblock-File	                    # Unblock files downloaded from the Internet
+    Undo-Transaction	                # Roll back a transaction
+    Unregister-Event	                # Cancel an event subscription
+    Unregister-PSSessionConfiguration	# Configuration  Delete registered PS session configuration
+    Update-Formatdata	                # Update and append format data files
+    Update-Help	                        # Download and install help files
+    Update-List	                        # Add and remove items from a collection
+    Update-TypeData	                    # Update extended type configuration
+    Update-Typedata	                    # Update the current extended type configuration
+    Use-Transaction	                    # Add a command or expression to the transaction
+    Wait-Event	                        # Wait until a particular event is raised
+    Wait-Job	                        # Wait for a background job
+    Wait-Process	                    # Wait for a process to stop
+    Where method	                    # Filter objects from a collection
+    Where-Object	                    # Filter the objects passed along the command pipeline
+    Where-Object	                    # Filter input from the pipeline
+    While	                            # Loop while a condition is True
+    Write-Debug	                        # Write a debug message to the host display
+    Write-Error	                        # Write an object to the error pipeline
+    Write-EventLog	                    # Write an event to an event log
+    Write-Host  	                    # Display text on screen
+    Write-Host	                        # Write customized output to the host/screen
+    Write-Output	                    # Write an object to the pipeline
+    Write-Progress	                    # Display a progress bar
+    Write-Verbose	                    # Write a string to the host's verbose display
+    Write-Warning	                    # Write a string in reverse video to the display
+    Zipfile	                            # Compress or Extract zip files
+
+[40]:<http://ss64.com/ps/>
+
+Windows registry [[56]]
+-----------------------
+
+### Structure of the Windows Registry (hives)
+
+    HKEY_CLASSES_ROOT   # Information stored here ensures that the correct program opens when it is executed in Windows Explorer. 
+    HKEY_CURRENT_USER   # Contains configuration information for the user who is currently logged into the system, including user's folders, screen colors, and Control Panel settings
+    HKEY_LOCAL_MACHINE  # Contains machine hardware-specific information that the operating system runs on
+    HKEY_USERS          # Contains configuration information of all user profiles on the system, which concerns application configurations, and visual settings
+    HKEY_CURRENT_CONFIG # Stores information about the systems current configuration. Alias for: HKLM\Config\profile
+    
+### Autorun locations
+
+    HKLM\Software\Microsoft\Windows\CurrentVersion\Runonce
+    HKLM\Software\Microsoft\Windows\CurrentVersion\policies\Explorer\Run
+    HKLM\Software\Microsoft\Windows\CurrentVersion\Run
+    HKCU\Software\Microsoft\Windows NT\CurrentVersion\Windows\Run
+    HKCU\Software\Microsoft\Windows\CurrentVersion\Run
+    HKCU\Software\Microsoft\Windows\CurrentVersion\RunOnce
+    (ProfilePath)\Start Menu\Programs\Startup 
+    
+### MRU lists
+
+MRU, or 'most recently used' lists contain entries made due to specific actions performed by the user. There are numerous MRU lists located throughout various Registry keys. 
+    
+    HKCU\Software\Microsoft\Windows\ CurrentVersion\Explorer\RunMRU
+    
+### UserAssist
+The UserAssist key contains two or more subkeys which have long hexadecimal names that appear as globally unique identifiers (GUIDs). Each subkey records values that pertain to specific objects the user has accessed on the system, such as Control Panel applets, shortcut files, programs, etc.
+    
+    HCU\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist
+
+These values however, are encoded using a ROT- 13 encryption algorithm, sometimes known as a Caesar cipher. This particular encryption technique is quite easy to decipher, as each character is substituted with the character 13 spaces away from it in the ASCII table.
+With the UserAssist key, a forensic examiner can gain a better understanding of what types of files or applications have been accessed on a particular system.
+
+### Wireless netoworks
+
+    HKLM\SOFTWARE\ Microsoft\WZCSVC\Parameters\Interfaces key        # SSIDs
+    HKLM\SYSTEM\ControlSet001\ Services\Tcpip\Parameters\Interfaces\ # flynn-net
+
+### LAN computers
+
+    HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\ComputerDescriptions. # List of devices, including desktop computers, laptops, and printers 
+    
+### USB Devices
+  
+    HKLM\SYSTEM\ControlSet00x\Enum\USBSTOR  # Key stores the contents of the product and device ID values of any USB device that has ever been connected to the system
+    
+### Mounted devices
+  
+    HKLM\SYSTEM\MountedDevices   # Stores a database of mounted volumes that is used by the NTFS file system
+    
+### Firefox
+Firefox has limited footprints regarding Registry activity. Firefox stores  web history in a history.dat file, which is in ASCII format and plainly visible when opened.
+
+     C:\Documents and Settings\User Profile\Application Data\Mozilla\Firefox\Profiles\x.default\   
+   
+[56]:<http://www.forensicfocus.com/a-forensic-analysis-of-the-windows-registry>
