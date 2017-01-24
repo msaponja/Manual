@@ -13,7 +13,7 @@ Table of contents
 - 	[Hide Your Tracks](#hide-your-tracks)
 - 	[Linux Scripting](#linux-sripting)
 - 	[IP Tables](#ip-tables)
-- 	[Automatically run commands over SSH on many servers](#automatically-run-commands-over-SSH-on-many-servers)
+- 	[Automatically run commands over SSH on many servers](#automatically-run-commands-over-sSH-on-many-servers)
 - 	[CHKCONFIG](#chkconfig)
 - 	[Kali Linux Commands](#kali-linux-commands)
 - 	[Solaris](#solaris)
@@ -66,7 +66,7 @@ Table of contents
 
 -	[Literatura]
 
-Linux Network Commands[26]
+Linux Network Commands 26
 --------------------------
 
 General networking concepts that will help you in troubleshooting networks on Linux.
