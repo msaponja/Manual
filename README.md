@@ -6,14 +6,14 @@ Table of contents
 
  **Linux**
   
-- 	[Linux Network Commands [[26]](#linux-network-commands)
+- 	[Linux Network Commands](#linux-network-commands)
 - 	[Linux System Info](#linux-system-info)
 - 	[Manipulating files](#manipulating-filess)
 - 	[Linux Misc Commands](#linux-misc-commands)
 - 	[Hide Your Tracks](#hide-your-tracks)
 - 	[Linux Scripting](#linux-sripting)
 - 	[IP Tables](#ip-tables)
-- 	[Automatically run commands over SSH on many servers](#automatically-run-commands-over-sSH-on-many-servers)
+- 	[Automatically run commands over SSH on many servers](#automatically-run-commands-over-ssh-on-many-servers)
 - 	[CHKCONFIG](#chkconfig)
 - 	[Kali Linux Commands](#kali-linux-commands)
 - 	[Solaris](#solaris)
@@ -37,21 +37,21 @@ Table of contents
 
 **Networking**
 
-- 	[Common ports]
-- 	[IPv4]
--	[IPv6]
--	[Cisco commands]
--	[SNMP]
--	[Packet Capturing]
--	[DNS]
--	[VPN]
+- 	[Common ports](#common-ports)
+- 	[IPv4](#ipv4)
+-	[IPv6](#ipv6)
+-	[Cisco commands](#cisco-commands)
+-	[SNMP](#snmp)
+-	[Packet Capturing](#packet-capturing)
+-	[DNS](#dns)
+-	[VPN](#vpn)
 
 **PenTesting**
 
--	[Brute Forcing Services]
--	[Exploit Research]
--	[Metasploit]
--	[Password Cracking]
+-	[Brute Forcing Services](#brute-forcing-services)
+-	[Exploit Research](#exploit-research)
+-	[Metasploit](#metasploit)
+-	[Password Cracking](#password-cracking)
 
 **Slike/Tablice**
 
