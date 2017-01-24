@@ -101,7 +101,7 @@ General networking concepts that will help you in troubleshooting networks on Li
 [26]: <http://linux-training.be/linuxnet.pdf>
 
 
-# Linux system info [[34]]
+# Linux system info [34]
 --------------------------
 
 Most common commands used to check information and configuration details about various hardware peripherals and devices.
@@ -125,7 +125,7 @@ Most common commands used to check information and configuration details about v
     
 [34]: <http://www.binarytides.com/linux-commands-hardware-info/>
 
-# Linux Misc Commands [[25]]
+# Linux Misc Commands [25]
 ----------------------------
 
 Search commands
@@ -158,7 +158,7 @@ Counting commands
     
 [25]: <http://www.penguintutor.com/linux/misc-quickreference>
 
-# Manipulating files [[35]]
+# Manipulating files [35]
 ---------------------------
 
 Most frequently used Linux Commands for manipulating files.
@@ -170,7 +170,7 @@ Most frequently used Linux Commands for manipulating files.
     $ mkdir directory       # Create directories
 [35]: <http://linuxcommand.org/lts0050.php>
 
- # Linux Misc Commands [[25]]
+ # Linux Misc Commands [25]
  ----------------------------
 
 Search commands
@@ -203,7 +203,7 @@ Counting commands
     
 [25]: <http://www.penguintutor.com/linux/misc-quickreference>
 
-# Hide Your Tracks [[11]]
+# Hide Your Tracks [11]
 -------------------------
 
 ### Meterpreter
@@ -230,7 +230,7 @@ NOTICE: You will need physical access to the victims system
 
     $ shred -zu root/.bash_history      # The shred command with the -zu switches will overwrite the history with zeros and delete the file.
     
-### The logs[[12]]
+### The logs[12]
 
     $ WTMP      # Every log on/off, with login/logout time plus tty and host
     $ UTMP      # Who is online at the moment
@@ -272,18 +272,18 @@ NOTICE: You will need physical access to the victims system
 # Linux scripting
 -----------------
 
-### Understanding bash scripting[[27]]
+### Understanding bash scripting[27]
 
-### Ping sweep without NMAP [[28]]
+### Ping sweep without NMAP [28]
 
     $ for i in `seq 1 255`; do ping -c 1 10.10.10.$i | tr \\n ' ' | awk '/1 received/ {print $2}'; done
     $ for i in {1..254}; do ping -c 1 -W 1 10.1.1.$i | grep 'from'; done
 
-### Fork bomb[[29]]
+### Fork bomb[29]
 
     $ :(){ :|:& };:     # forkbomb(){ forkbomb | forkbomb & }; forkbomb
     
-### Monitor DNS[[30]]
+### Monitor DNS[30]
 -It takes the IP address or hostname of the DNS server to check. Checks the records defined in the array.
 
     //Define defaults
@@ -313,7 +313,7 @@ NOTICE: You will need physical access to the victims system
     }
     ?>
 
-### Monitoring NTP[[31]]
+### Monitoring NTP[31]
 
     #!/usr/local/bin/bash
     #ntptest
@@ -329,7 +329,7 @@ NOTICE: You will need physical access to the victims system
     
     NOTICE: Works with *nix Zabbix Server
 
-### Special shell variables to be aware [[32]]
+### Special shell variables to be aware [32]
 
     $ $*    # Passes in all of the arguments. This is useful for FOR loops
     $ $?    # Gets the error code (exit()) status) of the last program executed
@@ -337,7 +337,7 @@ NOTICE: You will need physical access to the victims system
     $ $!    # Gets the PID of the last background process
     $ $EUID # Gets the effective UID number of the scripts execution
 
-### Linux Iptables Firewall Shell Script For Standalone Server[[33]]
+### Linux Iptables Firewall Shell Script For Standalone Server[33]
 
     #!/bin/bash
     # A Linux Shell Script with common rules for IPTABLES Firewall.
@@ -433,7 +433,7 @@ NOTICE: You will need physical access to the victims system
 [32]: <http://wiki.jaxhax.org/images/9/94/Shell_Scripting_Crash_Course.pdf>
 [33]: <https://bash.cyberciti.biz/firewall/linux-iptables-firewall-shell-script-for-standalone-server/>
 
-# IP Tables[[13]]
+# IP Tables[13]
 -----------------
 
 ### Create a set named geoset
@@ -467,7 +467,7 @@ NOTICE: You will need physical access to the victims system
 
     # sudo iptables -A INPUT -m set --set !geoblock src -j DROP
     
-### Connection States[[14]]
+### Connection States[14]
 
     #iptables -A INPUT -p tcp --dport ssh -s 10.10.10.10 -m state --state NEW,ESTABLISHED -j ACCEPT
     #iptables -A OUTPUT -p tcp --sport 22 -d 10.10.10.10 -m state --state ESTABLISHED -j ACCEPT
@@ -478,9 +478,9 @@ NOTICE: You will need physical access to the victims system
     iptables --policy OUTPUT ACCEPT
     iptables --policy FORWARD ACCEPT
    
-### Red Hat Linux firewall[[15]] 
+### Red Hat Linux firewall[15]
 
-### IPtables Packet Flow Diagram[[16]]
+### IPtables Packet Flow Diagram[16]
 
 ![Iptables.gif](https://www.dropbox.com/s/5gwp8tk1q9hhnr4/Iptables.gif?dl=0&raw=1)
 
@@ -489,7 +489,7 @@ NOTICE: You will need physical access to the victims system
 [15]: <http://oceanpark.com/notes/firewall_example.html>
 [16]: <http://www.linuxhomenetworking.com/wiki/index.php/Quick_HOWTO_:_Ch14_:_Linux_Firewalls_Using_iptables#.WG_4SNRACdJ>
 
-# Example [[1]]
+# Example [1]
 ---------------
 
     tmpdir=${TMPDIR:-/tmp}/pssh.$$
@@ -506,7 +506,7 @@ NOTICE: You will need physical access to the victims system
     echo "Output for hosts are in $tmpdir"
 [1]:<http://unix.stackexchange.com/a/19015>
 
-# CHKCONFIG[[3]]
+# CHKCONFIG[3]
 ----------------
 
 The chkconfig utility is a command-line tool that allows you to specify in which runlevel to start a selected service, as well as to list all available services along with their current setting.
@@ -519,7 +519,7 @@ The chkconfig utility is a command-line tool that allows you to specify in which
     
 [3]: <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/s2-services-chkconfig.html>
 
-# Kali Linux Commands[[24]]
+# Kali Linux Commands[24]
 ---------------------------
 
     $ apropos     #   Change access permissions
@@ -747,7 +747,7 @@ The chkconfig utility is a command-line tool that allows you to specify in which
     $ yes 	      #  Print a string until interrupted
 [24]: <https://techlog360.com/a-z-kali-linux-commands/>
 
-# Using the PHP pfSense Shells [[49]]
+# Using the PHP pfSense Shells [49]
 -------------------------------------
 
 Using the PHP pfSense shell allows configuration of the config.xml file directly without needing to use the webConfigurator.
@@ -782,7 +782,7 @@ Using the PHP pfSense shell allows configuration of the config.xml file directly
 
 [49]:<https://doc.pfsense.org/index.php/Using_the_PHP_pfSense_Shell>
 
-# Solaris [[45]]
+# Solaris [45]
 ----------------
 
     ifconfig -a                                 # List of interfaces
