@@ -6,17 +6,17 @@ Table of contents
 
  **Linux**
   
-- [Linux Network Commands](#linux-network-commands)
-- [Linux System Info](#linux-system-info)
-- [Manipulating files](#manipulating-filess)
-- [Linux Misc Commands](#linux-misc-commands)
-- [Hide Your Tracks](#hide-your-tracks)
-- [Linux Scripting](#linux-sripting)
-- [IP Tables](#ip-tables)
-- [Automatically run commands over SSH on many servers](#automatically-run-commands-over-SSH-on-many-servers)
-- [CHKCONFIG](#chkconfig)
-- [Kali Linux Commands](#kali-linux-commands)
-- [Solaris](#solaris)
+- 	[Linux Network Commands](#linux-network-commands)
+- 	[Linux System Info](#linux-system-info)
+- 	[Manipulating files](#manipulating-filess)
+- 	[Linux Misc Commands](#linux-misc-commands)
+- 	[Hide Your Tracks](#hide-your-tracks)
+- 	[Linux Scripting](#linux-sripting)
+- 	[IP Tables](#ip-tables)
+- 	[Automatically run commands over SSH on many servers](#automatically-run-commands-over-SSH-on-many-servers)
+- 	[CHKCONFIG](#chkconfig)
+- 	[Kali Linux Commands](#kali-linux-commands)
+- 	[Solaris](#solaris)
   
 **Windows**
 
