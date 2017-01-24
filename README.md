@@ -6,7 +6,7 @@ Table of contents
 
  **Linux**
   
-- [Linux Network Commands]
+- [Linux Network Commands](#linux-network-commands)
 - [Linux System Info]
 - [Manipulating files]
 - [Linux Misc Commands]
