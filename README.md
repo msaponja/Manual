@@ -101,7 +101,7 @@ General networking concepts that will help you in troubleshooting networks on Li
 [26]: <http://linux-training.be/linuxnet.pdf>
 
 
-# Linux system info [34]
+Linux system info [34]
 --------------------------
 
 Most common commands used to check information and configuration details about various hardware peripherals and devices.
@@ -125,7 +125,7 @@ Most common commands used to check information and configuration details about v
     
 [34]: <http://www.binarytides.com/linux-commands-hardware-info/>
 
-# Linux Misc Commands [25]
+Linux Misc Commands [25]
 ----------------------------
 
 Search commands
@@ -158,7 +158,7 @@ Counting commands
     
 [25]: <http://www.penguintutor.com/linux/misc-quickreference>
 
-# Manipulating files [35]
+Manipulating files [35]
 ---------------------------
 
 Most frequently used Linux Commands for manipulating files.
@@ -170,7 +170,7 @@ Most frequently used Linux Commands for manipulating files.
     $ mkdir directory       # Create directories
 [35]: <http://linuxcommand.org/lts0050.php>
 
- # Linux Misc Commands [25]
+ Linux Misc Commands [25]
  ----------------------------
 
 Search commands
@@ -203,7 +203,7 @@ Counting commands
     
 [25]: <http://www.penguintutor.com/linux/misc-quickreference>
 
-# Hide Your Tracks [11]
+Hide Your Tracks [11]
 -------------------------
 
 ### Meterpreter
@@ -269,7 +269,7 @@ NOTICE: You will need physical access to the victims system
 [clearlogs.exe]: <http://ntsecurity.nu/toolbox/clearlogs/>
 [12]: <http://www.ouah.org/cover_your_tracks1.html>
 
-# Linux scripting
+Linux scripting
 -----------------
 
 ### Understanding bash scripting[27]
@@ -433,7 +433,7 @@ NOTICE: You will need physical access to the victims system
 [32]: <http://wiki.jaxhax.org/images/9/94/Shell_Scripting_Crash_Course.pdf>
 [33]: <https://bash.cyberciti.biz/firewall/linux-iptables-firewall-shell-script-for-standalone-server/>
 
-# IP Tables[13]
+IP Tables[13]
 -----------------
 
 ### Create a set named geoset
@@ -489,7 +489,7 @@ NOTICE: You will need physical access to the victims system
 [15]: <http://oceanpark.com/notes/firewall_example.html>
 [16]: <http://www.linuxhomenetworking.com/wiki/index.php/Quick_HOWTO_:_Ch14_:_Linux_Firewalls_Using_iptables#.WG_4SNRACdJ>
 
-# Example [1]
+Example [1]
 ---------------
 
     tmpdir=${TMPDIR:-/tmp}/pssh.$$
@@ -506,7 +506,7 @@ NOTICE: You will need physical access to the victims system
     echo "Output for hosts are in $tmpdir"
 [1]:<http://unix.stackexchange.com/a/19015>
 
-# CHKCONFIG[3]
+CHKCONFIG[3]
 ----------------
 
 The chkconfig utility is a command-line tool that allows you to specify in which runlevel to start a selected service, as well as to list all available services along with their current setting.
@@ -519,7 +519,7 @@ The chkconfig utility is a command-line tool that allows you to specify in which
     
 [3]: <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/s2-services-chkconfig.html>
 
-# Kali Linux Commands[24]
+Kali Linux Commands[24]
 ---------------------------
 
     $ apropos     #   Change access permissions
@@ -747,7 +747,7 @@ The chkconfig utility is a command-line tool that allows you to specify in which
     $ yes 	      #  Print a string until interrupted
 [24]: <https://techlog360.com/a-z-kali-linux-commands/>
 
-# Using the PHP pfSense Shells [49]
+Using the PHP pfSense Shells [49]
 -------------------------------------
 
 Using the PHP pfSense shell allows configuration of the config.xml file directly without needing to use the webConfigurator.
@@ -782,7 +782,7 @@ Using the PHP pfSense shell allows configuration of the config.xml file directly
 
 [49]:<https://doc.pfsense.org/index.php/Using_the_PHP_pfSense_Shell>
 
-# Solaris [45]
+Solaris [45]
 ----------------
 
     ifconfig -a                                 # List of interfaces
