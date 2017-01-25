@@ -58,7 +58,7 @@ Table of contents
 -	[References](Literatura.md)
 
 Linux Network Commands 
---------------------------
+----------------------
 
 General networking concepts that will help you in troubleshooting networks on Linux [[26]](http://linux-training.be/linuxnet.pdf).
 
@@ -90,9 +90,9 @@ General networking concepts that will help you in troubleshooting networks on Li
     $ echo "nameserver x.x.x.x" /etc/resolv.conf # Add DNS Server
 
 Linux System Info 
---------------------------
+-----------------
 
-Most common commands used to check information and configuration details about various hardware peripherals and devices. [[34]]
+Most common commands used to check information and configuration details about various hardware peripherals and devices.[[34]]
 
     $ lscpu                  # Reports information abut cpu and processing units
     $ lshw                   # List hardware
@@ -114,7 +114,7 @@ Most common commands used to check information and configuration details about v
 [34]: <http://www.binarytides.com/linux-commands-hardware-info/>
 
 Linux Misc Commands 
---------------------------
+-------------------
 
 Search commands[[25]]
 
@@ -147,7 +147,7 @@ Counting commands
 [25]: <http://www.penguintutor.com/linux/misc-quickreference>
 
 Manipulating files 
----------------------
+------------------
 
 Most frequently used Linux Commands for manipulating files.[[35]]
 
