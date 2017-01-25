@@ -53,21 +53,12 @@ Table of contents
 -	[Metasploit](#metasploit)
 -	[Password Cracking](#password-cracking)
 
-**Slike/Tablice**
-
--	[Figure: Driver.csv]
--	[Figure: IPtables Packet Flow Diagram]
--	[Figure: Subnetting]
-- 	[Figure: SNMP Concept]
-- 	[Figure: Terminal Services Arhitecture]
--	[Table: Common ports]
-
 **Literatura**
 
 -	[References(Literatura.md)
 
 Linux Network Commands 
-----------------------
+--------------------------
 
 General networking concepts that will help you in troubleshooting networks on Linux [[26]](http://linux-training.be/linuxnet.pdf).
 
@@ -99,7 +90,7 @@ General networking concepts that will help you in troubleshooting networks on Li
     $ echo "nameserver x.x.x.x" /etc/resolv.conf # Add DNS Server
 
 Linux System Info 
--------------------
+--------------------------
 
 Most common commands used to check information and configuration details about various hardware peripherals and devices. [[34]]
 
