@@ -8,7 +8,7 @@ Table of contents
   
 * 	[Linux Network Commands](#linux-network-commands)
 * 	[Linux System Info](#linux-system-info)
-* 	[Manipulating files](#manipulating-filess)
+* 	[Manipulating files](#manipulating-files)
 * 	[Linux Misc Commands](#linux-misc-commands)
 * 	[Hide Your Tracks](#hide-your-tracks)
 * 	[Linux Scripting](#linux-sripting)
@@ -156,7 +156,7 @@ Counting commands
 [25]: <http://www.penguintutor.com/linux/misc-quickreference>
 
 Manipulating files 
-------------------
+---------------------
 
 Most frequently used Linux Commands for manipulating files.[[35]]
 
