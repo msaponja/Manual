@@ -66,10 +66,10 @@ Table of contents
 
 -	[Literatura](Literatura.md)
 
-Linux Network Commands [[26]](http://linux-training.be/linuxnet.pdf)
+# Linux Network Commands 
 ----------------------
 
-General networking concepts that will help you in troubleshooting networks on Linux.
+General networking concepts that will help you in troubleshooting networks on Linux [[26]](http://linux-training.be/linuxnet.pdf).
 
     $ watch ss -tp                               # Network connections
     $ netstat -ant                               # Tcp connections -anu=udp
@@ -98,10 +98,10 @@ General networking concepts that will help you in troubleshooting networks on Li
     $ echo "1" /proc/sys/net/ipv4/ip_forward     # Turn on IP Forwarding
     $ echo "nameserver x.x.x.x" /etc/resolv.conf # Add DNS Server
 
-Linux System Info [[34]]
-------------------------
+# Linux System Info 
+-----------------
 
-Most common commands used to check information and configuration details about various hardware peripherals and devices.
+Most common commands used to check information and configuration details about various hardware peripherals and devices. [[34]]
 
     $ lscpu                  # Reports information abut cpu and processing units
     $ lshw                   # List hardware
