@@ -64,9 +64,9 @@ Table of contents
 
 **Literatura**
 
--	[Literatura](Literatura.md)
+-	[References(Literatura.md)
 
-# Linux Network Commands 
+Linux Network Commands 
 ----------------------
 
 General networking concepts that will help you in troubleshooting networks on Linux [[26]](http://linux-training.be/linuxnet.pdf).
@@ -98,8 +98,8 @@ General networking concepts that will help you in troubleshooting networks on Li
     $ echo "1" /proc/sys/net/ipv4/ip_forward     # Turn on IP Forwarding
     $ echo "nameserver x.x.x.x" /etc/resolv.conf # Add DNS Server
 
-# Linux System Info 
------------------
+Linux System Info 
+-------------------
 
 Most common commands used to check information and configuration details about various hardware peripherals and devices. [[34]]
 
@@ -122,10 +122,10 @@ Most common commands used to check information and configuration details about v
     
 [34]: <http://www.binarytides.com/linux-commands-hardware-info/>
 
-Linux Misc Commands [[25]]
+Linux Misc Commands 
 --------------------------
 
-Search commands
+Search commands[[25]]
 
     $ find -type f | xargs ls -l | cut -c 33- | sort -n     # Search for files - sort by filesize (add -r for reverse order)
     $ find -atime +32 -exec mv {} /var/archive/logs \;      # Move files that are over 1 month old
@@ -155,10 +155,10 @@ Counting commands
     
 [25]: <http://www.penguintutor.com/linux/misc-quickreference>
 
-Manipulating files [[35]]
--------------------------
+Manipulating files 
+------------------
 
-Most frequently used Linux Commands for manipulating files.
+Most frequently used Linux Commands for manipulating files.[[35]]
 
     $ cp file1 file         # Copies the contents of file1 into file2. If file2 does not exist, it is created
     $ cp -i file1 file2     # If file2 exists, the user is prompted before it is overwritten with the contents of file1
@@ -167,10 +167,10 @@ Most frequently used Linux Commands for manipulating files.
     $ mkdir directory       # Create directories
 [35]: <http://linuxcommand.org/lts0050.php>
 
-Linux Misc Commands [[25]]
---------------------------
+Linux Misc Commands
+-------------------
 
-Search commands
+Search commands[[25]]
 
     $ find -type f | xargs ls -l | cut -c 33- | sort -n     # Search for files - sort by filesize (add -r for reverse order)
     $ find -atime +32 -exec mv {} /var/archive/logs \;      # Move files that are over 1 month old
@@ -200,10 +200,10 @@ Counting commands
     
 [25]: <http://www.penguintutor.com/linux/misc-quickreference>
 
-Hide Your Tracks [[11]]
+Hide Your Tracks 
 ---------------------
 
-### Meterpreter
+### Meterpreter [[11]]
 
     $ clearev   # Clear all event logs (Application, System, Security)
 ### Windows machines
@@ -430,10 +430,10 @@ Linux scripting
 [32]: <http://wiki.jaxhax.org/images/9/94/Shell_Scripting_Crash_Course.pdf>
 [33]: <https://bash.cyberciti.biz/firewall/linux-iptables-firewall-shell-script-for-standalone-server/>
 
-IP Tables [[13]]
-----------------
+IP Tables 
+---------
 
-### Create a set named geoset
+### Create a set named geoset[[13]]
 
     $ sudo ipset create geoblock hash:net,port
     
@@ -486,8 +486,9 @@ IP Tables [[13]]
 [15]: <http://oceanpark.com/notes/firewall_example.html>
 [16]: <http://www.linuxhomenetworking.com/wiki/index.php/Quick_HOWTO_:_Ch14_:_Linux_Firewalls_Using_iptables#.WG_4SNRACdJ>
 
-Example [[1]]
--------------
+Example 
+-------
+[[1]]
 
     tmpdir=${TMPDIR:-/tmp}/pssh.$$
     mkdir -p $tmpdir
@@ -503,10 +504,10 @@ Example [[1]]
     echo "Output for hosts are in $tmpdir"
 [1]:<http://unix.stackexchange.com/a/19015>
 
-CHKCONFIG [[3]]
----------------
+CHKCONFIG 
+---------
 
-The chkconfig utility is a command-line tool that allows you to specify in which runlevel to start a selected service, as well as to list all available services along with their current setting.
+The chkconfig utility is a command-line tool that allows you to specify in which runlevel to start a selected service, as well as to list all available services along with their current setting.[[3]]
 
     $ chkconfig --list                              # Listing the Services
     $ chkconfig --list service_name                 # Display the current settings for a selected service only
@@ -516,8 +517,9 @@ The chkconfig utility is a command-line tool that allows you to specify in which
     
 [3]: <https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/s2-services-chkconfig.html>
 
-Kali Linux Commands [[24]]
---------------------------
+Kali Linux Commands 
+-------------------
+[[24]]
 
     $ apropos     #   Change access permissions
     $ chown 	  #   Change file owner and group
@@ -745,10 +747,10 @@ Kali Linux Commands [[24]]
     
 [24]: <https://techlog360.com/a-z-kali-linux-commands/>
 
-Using the PHP pfSense Shells [[49]]
+Using the PHP pfSense Shells 
 ---------------------------------
 
-Using the PHP pfSense shell allows configuration of the config.xml file directly without needing to use the webConfigurator.
+Using the PHP pfSense shell allows configuration of the config.xml file directly without needing to use the webConfigurator.[[49]]
 
 ### Options
 ![ii.png](https://www.dropbox.com/s/3mhvnw8v1eiql99/ii.png?dl=0&raw=1)
@@ -778,8 +780,9 @@ Using the PHP pfSense shell allows configuration of the config.xml file directly
 
 [49]:<https://doc.pfsense.org/index.php/Using_the_PHP_pfSense_Shell>
 
-Solaris [[45]]
---------------
+Solaris 
+-------
+[[45]]
 
     ifconfig -a                                 # List of interfaces
     netstat -in                                 # List of interface
@@ -809,8 +812,9 @@ Solaris [[45]]
     
 [45]:<https://www.google.hr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=2&cad=rja&uact=8&ved=0ahUKEwiE1be92LDRAhUHkRQKHXnZAx8QFgggMAE&url=https%3A%2F%2Fwatchthestack.files.wordpress.com%2F2015%2F03%2Frtfm-red-team-field-manual.pdf&usg=AFQjCNGEsophTnPPNguco9UBIh0p92db_A&sig2=lEFteRB9djm24jYJoV5iTg>
 
-Windows Versions [[55]]
------------------------
+Windows Versions 
+----------------
+[[55]]
 
        NT 3.1   # Windows NT 3.1 (All)
        NT 3.2   # Windows NT 3.5 (All)
@@ -827,8 +831,9 @@ Windows Versions [[55]]
 
 [55]: <https://en.wikipedia.org/wiki/List_of_Microsoft_Windows_versions>
        
-Startup Directories [[46]]
---------------------------
+Startup Directories 
+-------------------
+[[46]]
 
 ### NT 6.1
 
@@ -844,8 +849,9 @@ Startup Directories [[46]]
     
 [46]: https://watchthestack.files.wordpress.com/2015/03/rtfm-red-team-field-manual.pdf
        
-Useful Run Commands [[48]]
---------------------------
+Useful Run Commands 
+-------------------
+[[48]]
     		
     access.cpl					        # Accessibility Controls
     accwiz					            # Accessibility Wizard
@@ -1005,10 +1011,10 @@ Useful Run Commands [[48]]
     write				            	# Wordpad
 [48]:<http://mypchell.com/guides/34-guides/69-156-useful-run-commands>
     		
-Systeminfo[[54]]
-----------------
+Systeminfo
+----------
 
-### Syntax
+### Syntax[[54]]
 
     systeminfo [/s <Computer> [/u <Domain>\<UserName> [/p <Password>]]] [/fo {TABLE | LIST | CSV}] [/nh]
     
@@ -1043,10 +1049,10 @@ Systeminfo[[54]]
 
 [54]:<https://technet.microsoft.com/en-us/library/cc771190(v=ws.11).aspx>    		
        
-Windows Net/Domain Commands[[52]]
----------------------------------
+Windows Net/Domain Commands
+---------------------------
 
-### Net user - Syntax
+### Net user - Syntax[[52]]
 
     net user [<UserName> {<Password> | *} [<Options>]] [/domain]
     net user [<UserName> {<Password> | *} /add [<Options>] [/domain]]
@@ -1079,10 +1085,10 @@ Windows Net/Domain Commands[[52]]
 
 [52]: <https://technet.microsoft.com/en-us/library/cc754051(v=ws.11).aspx>
     
-Running remote commands[[42]]
------------------------------
+Running remote commands
+-----------------------
 
-Many Windows PowerShell cmdlets have the ComputerName parameter that enables you to collect data and change settings on one or more remote computers. They use a variety of communication technologies and many work on all Windows operating systems that Windows PowerShell supports without any special configuration.
+Many Windows PowerShell cmdlets have the ComputerName parameter that enables you to collect data and change settings on one or more remote computers. They use a variety of communication technologies and many work on all Windows operating systems that Windows PowerShell supports without any special configuration.[[42]]
 
 Typically, cmdlets that support remoting without special configuration have the ComputerName parameter and do not have the Session parameter. To find these cmdlets in your session, type:
 
@@ -1127,8 +1133,9 @@ Now you can use the data in the $h variable in subsequent commands, such as the 
     
 [42]: <https://msdn.microsoft.com/en-us/powershell/scripting/core-powershell/running-remote-commands>
     
-Windows network commands[[53]]
-------------------------------
+Windows network commands
+------------------------
+[[53]]
 
     $ Arp                       # Display or manipulate the ARP information on a network device or computer.
     $ Finger                    # The finger command available in Unix and Linux variants allows a user to find sometimes personal information about a user. 
@@ -1147,10 +1154,10 @@ Windows network commands[[53]]
     
 [53]: <http://www.computerhope.com/issues/ch000444.htm>
     
-Hidden tools in Command Line[[10]]
-----------------------------------
+Hidden tools in Command Line
+----------------------------
 
-NOTICE: You need to run CMD with administrator privileges
+NOTICE: You need to run CMD with administrator privileges [[10]]
 
 ### System file checker
 
@@ -1184,10 +1191,10 @@ NOTICE: You need to run CMD with administrator privileges
     
 [10]: <http://lifehacker.com/the-best-tools-hidden-in-windows-command-line-1553193077>
     
-Miscellaneous commands Windows [[37]]
--------------------------------------
+Miscellaneous commands Windows 
+------------------------------
 
-### Lock Workstation
+### Lock Workstation [[37]]
 
     rundll32.dll user32.dll LockWorkstation
     
@@ -1218,10 +1225,10 @@ Miscellaneous commands Windows [[37]]
 
 [37]: <https://watchthestack.files.wordpress.com/2015/03/rtfm-red-team-field-manual.pdf>               
        
-PsExec [[41]]
--------------
+PsExec 
+------
 
-PsExec is a light-weight telnet-replacement that lets you execute processes on other systems, complete with full interactivity for console applications, without having to manually install client software.
+PsExec is a light-weight telnet-replacement that lets you execute processes on other systems, complete with full interactivity for console applications, without having to manually install client software.[[41]]
 
     # The following command launches an interactive command prompt on \\marklap:
     
@@ -1249,10 +1256,10 @@ PsExec is a light-weight telnet-replacement that lets you execute processes on o
 
 [41]: <https://technet.microsoft.com/en-us/sysinternals/pxexec.aspx>       
 
-Terminal Services [[47]]
-------------------------
+Terminal Services 
+-----------------
 
-Terminal Services provides the ability to host multiple, simultaneous client sessions on Microsoft Windows Server 2003.
+Terminal Services provides the ability to host multiple, simultaneous client sessions on Microsoft Windows Server 2003.[[47]]
 
 ### Terminal Services Arhitecture
 
@@ -1276,10 +1283,10 @@ Terminal Services provides the ability to host multiple, simultaneous client ses
 
 [47]: <https://technet.microsoft.com/en-us/library/cc755399(v=ws.10).aspx>
 
-WMIC[[51]]
-----------
+WMIC
+----
 
-WMIC extends WMI for operation from several command-line interfaces and through batch scripts. Before WMIC, you used WMI-based applications (such as SMS), the WMI Scripting API, or tools such as CIM Studio to manage WMI-enabled computers. Without a firm grasp on a programming language such as C++ or a scripting language such as VBScript and a basic understanding of the WMI namespace, do-it-yourself systems management with WMI was difficult. WMIC changes this situation by giving you a powerful, user-friendly interface to the WMI namespace.
+WMIC extends WMI for operation from several command-line interfaces and through batch scripts. Before WMIC, you used WMI-based applications (such as SMS), the WMI Scripting API, or tools such as CIM Studio to manage WMI-enabled computers. Without a firm grasp on a programming language such as C++ or a scripting language such as VBScript and a basic understanding of the WMI namespace, do-it-yourself systems management with WMI was difficult. WMIC changes this situation by giving you a powerful, user-friendly interface to the WMI namespace.[[51]]
 
 ### Listing 1: Code to Display
 
@@ -1328,8 +1335,9 @@ wmic /output:e:\se_class.htm
       /format:rawxml.xsl
 [51]: <https://msdn.microsoft.com/en-us/library/bb742610.aspx>
 
-Powershell [[40]]
-----------------
+Powershell 
+----------
+[[40]]
 
     #	                                # Comment / Remark
     $_	                                # The current pipeline object
@@ -1643,10 +1651,10 @@ Powershell [[40]]
 
 [40]:<http://ss64.com/ps/>
 
-Windows registry [[56]]
------------------------
+Windows registry 
+----------------
 
-### Structure of the Windows Registry (hives)
+### Structure of the Windows Registry (hives)[[56]]
 
     HKEY_CLASSES_ROOT   # Information stored here ensures that the correct program opens when it is executed in Windows Explorer. 
     HKEY_CURRENT_USER   # Contains configuration information for the user who is currently logged into the system, including user's folders, screen colors, and Control Panel settings
@@ -1702,8 +1710,9 @@ Firefox has limited footprints regarding Registry activity. Firefox stores  web 
    
 [56]:<http://www.forensicfocus.com/a-forensic-analysis-of-the-windows-registry>
 
-Common ports [[6]]
-------------------
+Common ports
+------------
+[[6]]
 
 | Port        | Protocol           | Description  |
 | ----------- |:------------------:| ------------:|
@@ -1924,8 +1933,9 @@ The snmpbulkwalk command uses the GETBULK SNMP protocol feature to query for an 
 [43]: <http://www.cert.hr/sites/default/files/NCERT-PUBDOC-2010-09-313.pdf>
 [44]: <https://docs.oracle.com/cd/E19201-01/820-6413-13/SNMP_commands_reference_appendix.html>
 
-Packet Capturing [[38]]
------------------------
+Packet Capturing 
+----------------
+[[38]]
 
     tcpdump -i eth0                     # Capture Packets From Specific Interface
     tcpdump -c 5 -i eth0                # Capture Only N Number of Packets
@@ -1965,10 +1975,10 @@ Scan a domain (-d example.com), use a dictionary to brute force hostnames (-D /u
 [7]: <http://tools.kali.org/information-gathering/dnsrecon>
 [8]: <https://nmap.org/book/output-formats-grepable-output.html>
 
-VPN [[50]]
-----------
+VPN 
+---
 
-### Write PSK to a file
+### Write PSK to a file[[50]]
 
     ike-scan -M -A vpn ip -P file
         
@@ -1978,10 +1988,10 @@ VPN [[50]]
 
 [50]: <https://github.com/royhills/ike-scan>
 
-Brute Forcing Services [[2]]
-----------------------------
+Brute Forcing Services 
+----------------------
 
-### Hydra FTP Brute Force
+### Hydra FTP Brute Force[[2]]
 
 	hydra -l USERNAME -P /usr/share/wordlistsnmap.lst -f 192.168.X.XXX ftp -V
 
@@ -1995,8 +2005,9 @@ Brute Forcing Services [[2]]
 	
 [2]: <https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#brute-forcing-services>
 
-Exploit Research [[9]]
-----------------------
+Exploit Research 
+----------------
+[[9]]
 
 	searchsploit windows 2003 | grep -i local                                # Search exploit-db for exploit, in this example windows 2003 + local esc
 	site:exploit-db.com exploit kernel <= 3                                  # Use google to search exploit-db.com for exploits
@@ -2004,10 +2015,10 @@ Exploit Research [[9]]
 		
 [9]: <https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#exploit-research>
 
-Metasploit [[36]]
------------------
+Metasploit 
+----------
 
-### Meterpreter Payloads
+### Meterpreter Payloads[[36]]
 
     set payload windows/meterpreter/reverse_tcp     # Windows reverse tcp payload
     set payload windows/vncinject/reverse_tcp       # Meterpreter Windows VNC Payload
@@ -2045,10 +2056,10 @@ Metasploit [[36]]
 
 [36]: <https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/#metasploit>
 
-Password Cracking [[39]]
-------------------------
+Password Cracking
+-----------------
 
-## John The Ripper - JTR
+## John The Ripper - JTR[[39]]
 
 ###JTR password cracking
 
